@@ -18,8 +18,8 @@
       --paper: #FFFEF8;
       --paper-light: #FFFFFF;
       --sumi: #3D3020;
-      --shu: #C82020;
-      --shu-deep: #9E1818;
+      --shu: #B71C1C;
+      --shu-deep: #8B0000;
       --gold: #D4A800;
       --gold-light: #F7C600;
       --line: #E8DEB8;
@@ -186,23 +186,25 @@
     }
 
     .cta-header {
-      background: var(--shu);
-      color: #fff;
+      background: var(--gold-light);
+      color: #1A1510;
       padding: 10px 22px;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 14px;
       letter-spacing: .06em;
-      border: 1px solid var(--shu-deep);
+      border: 1px solid var(--gold);
     }
 
     .cta-header:hover {
-      background: var(--shu-deep);
-      color: #fff
+      background: var(--gold);
+      color: #1A1510
     }
 
     nav {
-      background: var(--shu);
-      border-top: 1px solid rgba(255, 255, 255, .15);
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 2px solid var(--line);
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
     }
 
     nav ul {
@@ -220,13 +222,13 @@
 
     nav a {
       display: block;
-      color: #fff;
+      color: #333;
       text-align: center;
       padding: 13px 12px;
       font-size: 13.5px;
       letter-spacing: .08em;
       font-weight: 500;
-      border-right: 1px solid rgba(255, 255, 255, .15);
+      border-right: 1px solid rgba(0, 0, 0, .08);
       position: relative;
       transition: all .15s;
     }
@@ -236,13 +238,14 @@
     }
 
     nav a:hover {
-      background: rgba(0, 0, 0, .15);
-      color: var(--gold-light)
+      background: rgba(183, 28, 28, .05);
+      color: var(--shu)
     }
 
     nav a.active {
-      background: var(--shu-deep);
-      color: var(--gold-light)
+      background: transparent;
+      color: var(--shu);
+      font-weight: 700;
     }
 
     nav a.active::after {
@@ -252,24 +255,43 @@
       right: 0;
       bottom: 0;
       height: 3px;
-      background: var(--gold-light);
+      background: var(--shu);
     }
 
     .hero {
       position: relative;
-      background: linear-gradient(135deg, #C82020 0%, #8B1515 100%);
-      color: var(--paper-light);
+      background: #FFFDE7;
+      color: var(--sumi);
       overflow: hidden;
       border-bottom: 4px solid var(--gold-light);
     }
 
+    /* 背景画像レイヤー */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* 画像の上にオーバーレイ＋グリッド */
     .hero::before {
       content: "";
       position: absolute;
       inset: 0;
+      z-index: 1;
+      background-color: rgba(255, 253, 231, 0.82);
       background-image:
-        linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px);
+        linear-gradient(rgba(183, 28, 28, .03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(183, 28, 28, .03) 1px, transparent 1px);
       background-size: 48px 48px;
       pointer-events: none;
     }
@@ -281,8 +303,9 @@
       top: -80px;
       width: 380px;
       height: 380px;
-      background: radial-gradient(circle, rgba(247, 198, 0, .2) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(247, 198, 0, .25) 0%, transparent 65%);
       pointer-events: none;
+      z-index: 1;
     }
 
     .hero .wrap {
@@ -292,7 +315,7 @@
       padding: 64px 24px;
       align-items: center;
       position: relative;
-      z-index: 1;
+      z-index: 2;
     }
 
     .hero-eyebrow {
@@ -301,7 +324,7 @@
       gap: 10px;
       font-size: 12px;
       letter-spacing: .3em;
-      color: var(--gold-light);
+      color: var(--shu);
       margin-bottom: 18px;
       font-weight: 500;
     }
@@ -310,7 +333,7 @@
       content: "";
       width: 32px;
       height: 1px;
-      background: var(--gold-light)
+      background: var(--shu)
     }
 
     .hero h2 {
@@ -320,23 +343,25 @@
       letter-spacing: .04em;
       font-weight: 800;
       margin-bottom: 20px;
+      color: #B71C1C;
     }
 
     .hero h2 .accent {
-      color: var(--gold-light)
+      color: var(--gold)
     }
 
     .hero h2 .small {
       font-size: 28px;
       display: block;
       margin-top: 8px;
-      font-weight: 600
+      font-weight: 600;
+      color: #333;
     }
 
     .hero p.lead {
       font-size: 15.5px;
       line-height: 1.95;
-      color: rgba(255, 255, 255, .85);
+      color: #333;
       margin-bottom: 28px;
       max-width: 520px;
     }
@@ -346,18 +371,18 @@
       gap: 32px;
       flex-wrap: wrap;
       padding-top: 22px;
-      border-top: 1px solid rgba(255, 255, 255, .25);
+      border-top: 1px solid rgba(183, 28, 28, .2);
     }
 
     .hero-meta div {
       font-size: 12px;
-      color: rgba(255, 255, 255, .7);
+      color: #666;
       letter-spacing: .1em
     }
 
     .hero-meta strong {
       display: block;
-      color: var(--gold-light);
+      color: #B71C1C;
       font-family: var(--serif);
       font-size: 22px;
       font-weight: 700;
@@ -385,26 +410,27 @@
     }
 
     .btn-primary {
-      background: var(--shu);
-      color: #fff;
-      border-color: var(--shu)
+      background: var(--gold-light);
+      color: #1A1510;
+      border-color: var(--gold);
+      font-weight: 700;
     }
 
     .btn-primary:hover {
-      background: var(--shu-deep);
-      color: #fff;
-      border-color: var(--shu-deep)
+      background: var(--gold);
+      color: #1A1510;
+      border-color: var(--gold)
     }
 
     .btn-ghost {
       background: transparent;
-      color: var(--gold-light);
-      border-color: var(--gold-light)
+      color: var(--shu);
+      border-color: var(--shu)
     }
 
     .btn-ghost:hover {
-      background: var(--gold-light);
-      color: var(--ink-deep)
+      background: var(--shu);
+      color: #fff
     }
 
     .hero-search {
@@ -482,19 +508,19 @@
     .hero-search button {
       width: 100%;
       padding: 13px;
-      background: var(--ink);
+      background: var(--shu);
       color: #fff;
       border: 0;
       font-family: inherit;
       font-size: 14px;
       letter-spacing: .1em;
       cursor: pointer;
-      font-weight: 500;
+      font-weight: 700;
       transition: all .15s;
     }
 
     .hero-search button:hover {
-      background: var(--shu)
+      background: var(--shu-deep)
     }
 
     .section {
@@ -1821,7 +1847,7 @@
       nav a {
         padding: 11px 6px;
         font-size: 12px;
-        border-bottom: 1px solid rgba(232, 196, 104, .08)
+        border-bottom: 1px solid rgba(0, 0, 0, .08)
       }
 
       .wrap {
@@ -1999,6 +2025,10 @@
     <section class="section active" id="sec-home">
 
       <div class="hero">
+        <picture class="hero-bg">
+          <source media="(max-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hero-sp.webp">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/hero-pc.webp" alt="岡崎の風景" loading="eager" fetchpriority="high">
+        </picture>
         <div class="wrap">
           <div>
             <div class="hero-eyebrow">愛知県岡崎市・地域密着 三十余年</div>
@@ -2011,8 +2041,8 @@
               岡崎市大西を拠点に、地域の不動産取引をきめ細やかにサポート。売買仲介から賃貸管理、土地活用のご提案、建物解体・外壁塗装まで、ワンストップで対応する地域密着型不動産会社です。
             </p>
             <div class="hero-actions">
-              <a href="#" class="btn btn-primary" data-sec="properties">物件を探す</a>
-              <a href="#" class="btn btn-ghost" data-sec="contact">無料査定・ご相談</a>
+              <a href="#" class="btn btn-primary" data-sec="contact">無料相談はこちら</a>
+              <a href="#" class="btn btn-ghost" data-sec="properties">物件を探す</a>
             </div>
             <div class="hero-meta">
               <div>取扱物件数<strong>120件超</strong></div>
