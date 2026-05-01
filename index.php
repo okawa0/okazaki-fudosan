@@ -88,33 +88,33 @@
       gap: 8px
     }
 
-    .topbar .biz {
+    .topbar__biz {
       letter-spacing: .05em
     }
 
-    .topbar .biz strong {
+    .topbar__biz strong {
       color: #F7C600;
       font-weight: 500
     }
 
-    .topbar .tel {
+    .topbar__tel {
       display: flex;
       align-items: center;
       gap: 14px
     }
 
-    .topbar .tel a {
+    .topbar__tel a {
       color: #F7C600;
       font-weight: 700;
       font-size: 14px;
       letter-spacing: .04em
     }
 
-    .topbar .tel a:hover {
+    .topbar__tel a:hover {
       color: #fff
     }
 
-    .topbar .tel .label {
+    .topbar__tel-label {
       color: rgba(255, 255, 255, .7)
     }
 
@@ -142,7 +142,7 @@
       text-decoration: none
     }
 
-    .logo-mark {
+    .logo__mark {
       width: 52px;
       height: 52px;
       background: var(--shu);
@@ -152,14 +152,14 @@
       flex-shrink: 0;
     }
 
-    .logo-mark::before {
+    .logo__mark::before {
       content: "";
       position: absolute;
       inset: 3px;
       border: 1px solid rgba(255, 255, 255, .5);
     }
 
-    .logo-mark span {
+    .logo__mark span {
       font-family: var(--serif);
       color: #fff;
       font-size: 26px;
@@ -169,7 +169,7 @@
       letter-spacing: -.02em;
     }
 
-    .logo-text .name {
+    .logo__name {
       font-family: var(--serif);
       font-size: 22px;
       font-weight: 700;
@@ -178,7 +178,7 @@
       line-height: 1.1;
     }
 
-    .logo-text .sub {
+    .logo__sub {
       font-size: 11px;
       color: var(--muted);
       letter-spacing: .18em;
@@ -267,14 +267,14 @@
     }
 
     /* 背景画像レイヤー */
-    .hero-bg {
+    .hero__bg {
       position: absolute;
       inset: 0;
       z-index: 0;
       overflow: hidden;
     }
 
-    .hero-bg img {
+    .hero__bg img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -318,7 +318,7 @@
       z-index: 2;
     }
 
-    .hero-eyebrow {
+    .hero__eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -329,7 +329,7 @@
       font-weight: 500;
     }
 
-    .hero-eyebrow::before {
+    .hero__eyebrow::before {
       content: "";
       width: 32px;
       height: 1px;
@@ -346,11 +346,11 @@
       color: #B71C1C;
     }
 
-    .hero h2 .accent {
+    .hero__accent {
       color: var(--gold)
     }
 
-    .hero h2 .small {
+    .hero__small {
       font-size: 28px;
       display: block;
       margin-top: 8px;
@@ -358,7 +358,7 @@
       color: #333;
     }
 
-    .hero p.lead {
+    .hero__lead {
       font-size: 15.5px;
       line-height: 1.95;
       color: #333;
@@ -366,7 +366,7 @@
       max-width: 520px;
     }
 
-    .hero-meta {
+    .hero__meta {
       display: flex;
       gap: 32px;
       flex-wrap: wrap;
@@ -374,13 +374,13 @@
       border-top: 1px solid rgba(183, 28, 28, .2);
     }
 
-    .hero-meta div {
+    .hero__meta div {
       font-size: 12px;
       color: #666;
       letter-spacing: .1em
     }
 
-    .hero-meta strong {
+    .hero__meta strong {
       display: block;
       color: #B71C1C;
       font-family: var(--serif);
@@ -390,7 +390,7 @@
       letter-spacing: .05em;
     }
 
-    .hero-actions {
+    .hero__actions {
       display: flex;
       gap: 12px;
       flex-wrap: wrap
@@ -433,7 +433,7 @@
       color: #fff
     }
 
-    .hero-search {
+    .hero__search {
       background: var(--paper-light);
       color: var(--sumi);
       padding: 28px;
@@ -441,7 +441,7 @@
       position: relative;
     }
 
-    .hero-search::before {
+    .hero__search::before {
       content: "";
       position: absolute;
       top: -1px;
@@ -452,7 +452,7 @@
       border-left: 2px solid var(--gold);
     }
 
-    .hero-search::after {
+    .hero__search::after {
       content: "";
       position: absolute;
       bottom: -1px;
@@ -463,7 +463,7 @@
       border-right: 2px solid var(--gold);
     }
 
-    .hero-search h3 {
+    .hero__search h3 {
       font-family: var(--serif);
       font-size: 20px;
       color: var(--ink);
@@ -471,14 +471,14 @@
       letter-spacing: .05em;
     }
 
-    .hero-search .sub {
+    .hero__search-sub {
       font-size: 12px;
       color: var(--muted);
       margin-bottom: 20px;
       letter-spacing: .05em
     }
 
-    .hero-search label {
+    .hero__search label {
       display: block;
       font-size: 11.5px;
       color: var(--muted);
@@ -487,8 +487,8 @@
       font-weight: 500;
     }
 
-    .hero-search select,
-    .hero-search input {
+    .hero__search select,
+    .hero__search input {
       width: 100%;
       padding: 11px 12px;
       font-family: inherit;
@@ -499,13 +499,13 @@
       margin-bottom: 14px;
     }
 
-    .hero-search select:focus,
-    .hero-search input:focus {
+    .hero__search select:focus,
+    .hero__search input:focus {
       outline: 0;
       border-color: var(--ink)
     }
 
-    .hero-search button {
+    .hero__search button {
       width: 100%;
       padding: 13px;
       background: var(--shu);
@@ -519,7 +519,7 @@
       transition: all .15s;
     }
 
-    .hero-search button:hover {
+    .hero__search button:hover {
       background: var(--shu-deep)
     }
 
@@ -547,7 +547,7 @@
       text-align: center;
     }
 
-    .sec-head .ja-eyebrow {
+    .sec-head__eyebrow {
       font-size: 11px;
       letter-spacing: .4em;
       color: var(--gold);
@@ -563,7 +563,7 @@
       letter-spacing: .08em;
     }
 
-    .sec-head .deco {
+    .sec-head__deco {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -571,15 +571,15 @@
       margin-top: 14px;
     }
 
-    .sec-head .deco::before,
-    .sec-head .deco::after {
+    .sec-head__deco::before,
+    .sec-head__deco::after {
       content: "";
       width: 40px;
       height: 1px;
       background: var(--line);
     }
 
-    .sec-head .deco span {
+    .sec-head__deco span {
       width: 6px;
       height: 6px;
       background: var(--gold);
@@ -605,7 +605,7 @@
       border-right: 0
     }
 
-    .strength .num {
+    .strength__num {
       font-family: var(--serif);
       font-size: 48px;
       font-weight: 800;
@@ -617,7 +617,7 @@
       gap: 8px;
     }
 
-    .strength .num::after {
+    .strength__num::after {
       content: "";
       flex: 1;
       height: 1px;
@@ -660,7 +660,7 @@
       box-shadow: 0 8px 24px rgba(26, 41, 64, .1);
     }
 
-    .property-img {
+    .property__img {
       aspect-ratio: 4/3;
       background: var(--ink);
       position: relative;
@@ -669,7 +669,7 @@
       place-items: center;
     }
 
-    .property-img::before {
+    .property__img::before {
       content: "";
       position: absolute;
       inset: 0;
@@ -678,7 +678,7 @@
         linear-gradient(180deg, rgba(232, 196, 104, .08) 0, transparent 60%);
     }
 
-    .property-img-icon {
+    .property__img-icon {
       font-family: var(--serif);
       font-size: 32px;
       color: var(--gold);
@@ -687,7 +687,7 @@
       position: relative;
     }
 
-    .property-tag {
+    .property__tag {
       position: absolute;
       top: 12px;
       left: 12px;
@@ -700,22 +700,22 @@
       z-index: 1;
     }
 
-    .property-tag.land {
+    .property__tag--land {
       background: var(--gold)
     }
 
-    .property-tag.rent {
+    .property__tag--rent {
       background: #3a6b8a
     }
 
-    .property-body {
+    .property__body {
       padding: 18px 20px 20px;
       flex: 1;
       display: flex;
       flex-direction: column
     }
 
-    .property-body h4 {
+    .property__body h4 {
       font-family: var(--serif);
       font-size: 16px;
       font-weight: 700;
@@ -725,13 +725,13 @@
       letter-spacing: .02em;
     }
 
-    .property-addr {
+    .property__addr {
       font-size: 12px;
       color: var(--muted);
       margin-bottom: 14px
     }
 
-    .property-price {
+    .property__price {
       font-family: var(--serif);
       font-size: 26px;
       font-weight: 800;
@@ -741,13 +741,13 @@
       margin-bottom: 14px;
     }
 
-    .property-price .unit {
+    .property__price-unit {
       font-size: 14px;
       font-weight: 500;
       margin-left: 2px
     }
 
-    .property-spec {
+    .property__spec {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 0;
@@ -755,7 +755,7 @@
       border-top: 1px solid var(--line);
     }
 
-    .property-spec div {
+    .property__spec div {
       padding: 8px 4px;
       text-align: center;
       border-right: 1px solid var(--line);
@@ -763,11 +763,11 @@
       color: var(--muted);
     }
 
-    .property-spec div:last-child {
+    .property__spec div:last-child {
       border-right: 0
     }
 
-    .property-spec strong {
+    .property__spec strong {
       display: block;
       color: var(--ink);
       font-size: 13px;
@@ -775,13 +775,13 @@
       margin-top: 2px;
     }
 
-    .property-actions {
+    .property__actions {
       display: flex;
       gap: 6px;
       margin-top: auto
     }
 
-    .property-actions a {
+    .property__actions a {
       flex: 1;
       text-align: center;
       padding: 10px 8px;
@@ -791,23 +791,23 @@
       border: 1px solid var(--ink);
     }
 
-    .property-actions .tel-btn {
+    .property__tel-btn {
       background: var(--ink);
       color: #fff
     }
 
-    .property-actions .tel-btn:hover {
+    .property__tel-btn:hover {
       background: var(--shu);
       border-color: var(--shu);
       color: #fff
     }
 
-    .property-actions .mail-btn {
+    .property__mail-btn {
       background: transparent;
       color: var(--ink)
     }
 
-    .property-actions .mail-btn:hover {
+    .property__mail-btn:hover {
       background: var(--ink);
       color: #fff
     }
@@ -823,7 +823,7 @@
       align-items: end;
     }
 
-    .filter-bar .field {
+    .filter-bar__field {
       flex: 1;
       min-width: 140px
     }
@@ -864,7 +864,7 @@
       background: var(--shu)
     }
 
-    .filter-result {
+    .filter-bar__result {
       font-size: 12px;
       color: var(--muted);
       margin: 8px 0
@@ -893,14 +893,14 @@
       border-bottom: 0
     }
 
-    .service-head {
+    .service__head {
       display: flex;
       align-items: baseline;
       gap: 14px;
       margin-bottom: 14px
     }
 
-    .service-head .label {
+    .service__label {
       font-family: var(--serif);
       font-size: 11px;
       color: var(--gold);
@@ -970,14 +970,14 @@
       text-align: center;
     }
 
-    .process-steps {
+    .process__steps {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       gap: 0;
       position: relative;
     }
 
-    .process-steps::before {
+    .process__steps::before {
       content: "";
       position: absolute;
       top: 24px;
@@ -992,7 +992,7 @@
       position: relative
     }
 
-    .step .circle {
+    .step__circle {
       width: 48px;
       height: 48px;
       border-radius: 50%;
@@ -1009,7 +1009,7 @@
       z-index: 1;
     }
 
-    .step:last-child .circle {
+    .step:last-child .step__circle {
       background: var(--shu);
       color: #fff;
       border-color: var(--shu)
@@ -1036,24 +1036,24 @@
       margin: 24px 0 48px;
     }
 
-    .company-info {
+    .company__info {
       background: var(--paper-light);
       border: 1px solid var(--line);
     }
 
-    .company-info dl {
+    .company__info dl {
       display: grid;
       grid-template-columns: 130px 1fr
     }
 
-    .company-info dt,
-    .company-info dd {
+    .company__info dt,
+    .company__info dd {
       padding: 14px 20px;
       border-bottom: 1px solid var(--line);
       font-size: 14px;
     }
 
-    .company-info dt {
+    .company__info dt {
       background: var(--shu);
       color: #fff;
       font-weight: 500;
@@ -1061,18 +1061,18 @@
       font-size: 12.5px;
     }
 
-    .company-info dd:last-of-type,
-    .company-info dt:last-of-type {
+    .company__info dd:last-of-type,
+    .company__info dt:last-of-type {
       border-bottom: 0
     }
 
-    .company-side {
+    .company__side {
       display: flex;
       flex-direction: column;
       gap: 20px
     }
 
-    .company-side .card {
+    .company__card {
       background: var(--shu);
       color: var(--paper-light);
       padding: 28px;
@@ -1080,7 +1080,7 @@
       position: relative;
     }
 
-    .company-side .card h4 {
+    .company__card h4 {
       font-family: var(--serif);
       font-size: 18px;
       color: #F7C600;
@@ -1088,20 +1088,20 @@
       letter-spacing: .06em;
     }
 
-    .company-side .card p {
+    .company__card p {
       font-size: 13.5px;
       line-height: 1.85;
       color: rgba(255, 255, 255, .85)
     }
 
-    .company-side .map-card {
+    .company__map-card {
       background: var(--paper-light);
       border: 1px solid var(--line);
       padding: 0;
       overflow: hidden;
     }
 
-    .company-side .map-placeholder {
+    .company__map-placeholder {
       height: 160px;
       background: var(--shu-deep);
       display: grid;
@@ -1113,7 +1113,7 @@
       position: relative;
     }
 
-    .company-side .map-placeholder::before {
+    .company__map-placeholder::before {
       content: "";
       position: absolute;
       inset: 0;
@@ -1123,12 +1123,12 @@
       background-size: 24px 24px;
     }
 
-    .company-side .map-text {
+    .company__map-text {
       padding: 18px 22px;
       font-size: 13px
     }
 
-    .company-side .map-text strong {
+    .company__map-text strong {
       color: var(--ink);
       font-weight: 600
     }
@@ -1148,7 +1148,7 @@
       position: relative;
     }
 
-    .staff-avatar {
+    .staff-card__avatar {
       width: 96px;
       height: 96px;
       border-radius: 50%;
@@ -1163,7 +1163,7 @@
       border: 2px solid var(--gold-light);
     }
 
-    .staff-card .name {
+    .staff-card__name {
       font-family: var(--serif);
       font-size: 18px;
       font-weight: 700;
@@ -1172,7 +1172,7 @@
       letter-spacing: .05em;
     }
 
-    .staff-card .role {
+    .staff-card__role {
       font-size: 11px;
       color: var(--gold);
       letter-spacing: .18em;
@@ -1222,7 +1222,7 @@
       margin-bottom: 16px;
     }
 
-    .review .who {
+    .review__who {
       padding-top: 14px;
       border-top: 1px solid var(--line);
       font-size: 12px;
@@ -1230,7 +1230,7 @@
       letter-spacing: .05em;
     }
 
-    .review .who strong {
+    .review__who strong {
       color: var(--ink);
       font-weight: 600;
       font-size: 13px
@@ -1246,7 +1246,7 @@
       margin-bottom: 8px;
     }
 
-    .faq-q {
+    .faq-item__question {
       padding: 18px 24px;
       font-weight: 600;
       color: var(--ink);
@@ -1260,11 +1260,11 @@
       transition: background .15s;
     }
 
-    .faq-q:hover {
+    .faq-item__question:hover {
       background: rgba(232, 196, 104, .08)
     }
 
-    .faq-q .qmark {
+    .faq-item__qmark {
       font-family: var(--serif);
       font-size: 20px;
       font-weight: 800;
@@ -1273,18 +1273,18 @@
       width: 24px;
     }
 
-    .faq-q .arrow {
+    .faq-item__arrow {
       margin-left: auto;
       color: var(--muted);
       transition: transform .2s;
       font-size: 12px
     }
 
-    .faq-item.open .faq-q .arrow {
+    .faq-item--open .faq-item__arrow {
       transform: rotate(180deg)
     }
 
-    .faq-a {
+    .faq-item__answer {
       display: none;
       padding: 0 24px 20px 62px;
       font-size: 14px;
@@ -1294,7 +1294,7 @@
       padding-top: 16px;
     }
 
-    .faq-item.open .faq-a {
+    .faq-item--open .faq-item__answer {
       display: block
     }
 
@@ -1305,7 +1305,7 @@
       margin: 24px 0 48px;
     }
 
-    .contact-side {
+    .contact__side {
       background: var(--shu);
       color: #ffe8e8;
       padding: 36px 32px;
@@ -1313,7 +1313,7 @@
       position: relative;
     }
 
-    .contact-side h3 {
+    .contact__side h3 {
       font-family: var(--serif);
       font-size: 20px;
       color: #F7C600;
@@ -1321,25 +1321,25 @@
       letter-spacing: .06em;
     }
 
-    .contact-side .big-tel {
+    .contact__big-tel {
       margin: 18px 0;
       padding: 18px 0;
       border-top: 1px solid rgba(255, 255, 255, .3);
       border-bottom: 1px solid rgba(255, 255, 255, .3);
     }
 
-    .contact-side .big-tel a {
+    .contact__big-tel a {
       color: #F7C600;
       text-decoration: none
     }
 
-    .contact-side .big-tel .label {
+    .contact__tel-label {
       font-size: 11px;
       letter-spacing: .2em;
       color: rgba(255, 255, 255, .7)
     }
 
-    .contact-side .big-tel strong {
+    .contact__big-tel strong {
       display: block;
       font-family: var(--serif);
       font-size: 34px;
@@ -1348,24 +1348,24 @@
       margin-top: 4px;
     }
 
-    .contact-side .hours {
+    .contact__hours {
       font-size: 13px;
       color: rgba(255, 255, 255, .8);
       line-height: 1.85
     }
 
-    .contact-side .hours strong {
+    .contact__hours strong {
       color: #F7C600;
       font-weight: 500
     }
 
-    .contact-form {
+    .contact__form {
       background: var(--paper-light);
       border: 1px solid var(--line);
       padding: 36px 32px;
     }
 
-    .contact-form h3 {
+    .contact__form h3 {
       font-family: var(--serif);
       font-size: 20px;
       color: var(--ink);
@@ -1373,7 +1373,7 @@
       letter-spacing: .06em;
     }
 
-    .contact-form .lead {
+    .contact__lead {
       font-size: 13px;
       color: var(--muted);
       margin-bottom: 20px
@@ -1392,7 +1392,7 @@
       letter-spacing: .05em;
     }
 
-    .form-row label .req {
+    .form-row__req {
       color: var(--shu);
       margin-left: 4px;
       font-weight: 700
@@ -1423,13 +1423,13 @@
       border-color: var(--ink);
     }
 
-    .form-row .radio-group {
+    .form-row__radio-group {
       display: flex;
       gap: 18px;
       font-size: 13px
     }
 
-    .form-row .radio-group label {
+    .form-row__radio-group label {
       display: flex;
       align-items: center;
       gap: 6px;
@@ -1476,7 +1476,7 @@
       color: #2a5a2a;
     }
 
-    .submit-result.show {
+    .submit-result--show {
       display: block
     }
 
@@ -1576,11 +1576,11 @@
       box-shadow: 0 12px 40px rgba(26, 41, 64, .25);
     }
 
-    .chatbot.open {
+    .chatbot--open {
       display: block
     }
 
-    .chatbot-header {
+    .chatbot__header {
       background: var(--shu);
       color: #F7C600;
       padding: 12px 16px;
@@ -1589,13 +1589,13 @@
       align-items: center;
     }
 
-    .chatbot-header strong {
+    .chatbot__header strong {
       font-family: var(--serif);
       font-size: 14px;
       letter-spacing: .08em
     }
 
-    .chatbot-close {
+    .chatbot__close {
       background: none;
       border: 0;
       color: #F7C600;
@@ -1604,25 +1604,25 @@
       line-height: 1
     }
 
-    .chatbot-body {
+    .chatbot__body {
       padding: 16px;
       max-height: 340px;
       overflow-y: auto
     }
 
-    .chatbot-body p {
+    .chatbot__body p {
       margin-bottom: 12px;
       line-height: 1.7;
       color: var(--sumi)
     }
 
-    .chatbot-body .opts {
+    .chatbot__opts {
       display: flex;
       flex-direction: column;
       gap: 6px
     }
 
-    .chatbot-body .opts button {
+    .chatbot__opts button {
       text-align: left;
       background: #fff;
       border: 1px solid var(--line);
@@ -1634,13 +1634,13 @@
       transition: all .15s;
     }
 
-    .chatbot-body .opts button:hover {
+    .chatbot__opts button:hover {
       background: var(--ink);
       color: var(--gold-light);
       border-color: var(--ink)
     }
 
-    .chat-back {
+    .chatbot__back {
       font-size: 12px;
       margin-top: 12px;
       display: inline-block;
@@ -1658,33 +1658,33 @@
       font-size: 13px;
     }
 
-    footer .foot-grid {
+    footer .footer__grid {
       display: grid;
       grid-template-columns: 1.5fr 1fr 1fr 1fr;
       gap: 32px;
       margin-bottom: 32px;
     }
 
-    footer .brand .logo {
+    footer .logo {
       margin-bottom: 14px
     }
 
-    footer .brand .logo .name {
+    footer .logo__name {
       color: var(--paper-light)
     }
 
-    footer .brand .logo .sub {
+    footer .logo__sub {
       color: #a8a08e
     }
 
-    footer .brand p {
+    footer .footer__brand p {
       font-size: 12.5px;
       line-height: 1.85;
       color: #a8a08e;
       margin-bottom: 10px
     }
 
-    footer .brand .license {
+    footer .footer__license {
       font-size: 11px;
       color: #7a7363;
       padding-top: 10px;
@@ -1719,7 +1719,7 @@
       color: var(--gold-light)
     }
 
-    footer .copy {
+    footer .footer__copy {
       text-align: center;
       padding: 18px 0;
       border-top: 1px solid rgba(247, 198, 0, .15);
@@ -1739,7 +1739,7 @@
         font-size: 34px
       }
 
-      .hero h2 .small {
+      .hero__small {
         font-size: 22px
       }
 
@@ -1773,12 +1773,12 @@
         border-bottom: 0
       }
 
-      .process-steps {
+      .process__steps {
         grid-template-columns: repeat(3, 1fr);
         gap: 24px 12px
       }
 
-      .process-steps::before {
+      .process__steps::before {
         display: none
       }
 
@@ -1794,7 +1794,7 @@
         grid-template-columns: 1fr
       }
 
-      footer .foot-grid {
+      footer .footer__grid {
         grid-template-columns: 1fr 1fr;
         gap: 24px
       }
@@ -1806,7 +1806,7 @@
         font-size: 11px
       }
 
-      .topbar .biz {
+      .topbar__biz {
         display: none
       }
 
@@ -1814,20 +1814,20 @@
         padding: 12px 16px
       }
 
-      .logo-mark {
+      .logo__mark {
         width: 44px;
         height: 44px
       }
 
-      .logo-mark span {
+      .logo__mark span {
         font-size: 22px
       }
 
-      .logo-text .name {
+      .logo__name {
         font-size: 18px
       }
 
-      .logo-text .sub {
+      .logo__sub {
         font-size: 10px
       }
 
@@ -1863,23 +1863,23 @@
         line-height: 1.4
       }
 
-      .hero h2 .small {
+      .hero__small {
         font-size: 18px
       }
 
-      .hero p.lead {
+      .hero__lead {
         font-size: 14px
       }
 
-      .hero-meta {
+      .hero__meta {
         gap: 18px
       }
 
-      .hero-meta strong {
+      .hero__meta strong {
         font-size: 18px
       }
 
-      .hero-search {
+      .hero__search {
         padding: 22px
       }
 
@@ -1900,7 +1900,7 @@
         padding: 24px 22px
       }
 
-      .strength .num {
+      .strength__num {
         font-size: 38px
       }
 
@@ -1912,17 +1912,17 @@
         padding: 24px 18px
       }
 
-      .process-steps {
+      .process__steps {
         grid-template-columns: repeat(2, 1fr)
       }
 
-      .company-info dl,
+      .company__info dl,
       .legal-table dl {
         grid-template-columns: 100px 1fr
       }
 
-      .company-info dt,
-      .company-info dd,
+      .company__info dt,
+      .company__info dd,
       .legal-table dt,
       .legal-table dd {
         padding: 11px 14px;
@@ -1938,7 +1938,7 @@
         padding: 18px 14px
       }
 
-      .staff-avatar {
+      .staff-card__avatar {
         width: 72px;
         height: 72px;
         font-size: 26px
@@ -1948,21 +1948,21 @@
         padding: 20px
       }
 
-      .contact-side,
-      .contact-form {
+      .contact__side,
+      .contact__form {
         padding: 24px 22px
       }
 
-      .contact-side .big-tel strong {
+      .contact__big-tel strong {
         font-size: 26px
       }
 
-      .form-row .radio-group {
+      .form-row__radio-group {
         flex-direction: column;
         gap: 8px
       }
 
-      footer .foot-grid {
+      footer .footer__grid {
         grid-template-columns: 1fr;
         gap: 24px
       }
@@ -1986,9 +1986,9 @@
 
   <div class="topbar">
     <div class="wrap">
-      <div class="biz">営業時間 9:00–18:00　<strong>定休日</strong>　水曜日（土日祝もご予約で対応可）</div>
-      <div class="tel">
-        <span class="label">お電話でのお問い合わせ</span>
+      <div class="topbar__biz">営業時間 9:00–18:00　<strong>定休日</strong>　水曜日（土日祝もご予約で対応可）</div>
+      <div class="topbar__tel">
+        <span class="topbar__tel-label">お電話でのお問い合わせ</span>
         <a href="tel:0564461655">0564-46-1655</a>
       </div>
     </div>
@@ -1997,10 +1997,10 @@
   <header>
     <div class="wrap">
       <a href="#" class="logo" data-sec="home">
-        <div class="logo-mark"><span>岡</span></div>
-        <div class="logo-text">
-          <div class="name">岡崎不動産</div>
-          <div class="sub">OKAZAKI REAL ESTATE</div>
+        <div class="logo__mark"><span>岡</span></div>
+        <div class="logo__text">
+          <div class="logo__name">岡崎不動産</div>
+          <div class="logo__sub">OKAZAKI REAL ESTATE</div>
         </div>
       </a>
       <a href="#" class="cta-header" data-sec="contact">無料相談・査定</a>
@@ -2025,34 +2025,34 @@
     <section class="section active" id="sec-home">
 
       <div class="hero">
-        <picture class="hero-bg">
+        <picture class="hero__bg">
           <source media="(max-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/images/hero-sp.webp">
           <img src="<?php echo get_template_directory_uri(); ?>/images/hero-pc.webp" alt="岡崎の風景" loading="eager" fetchpriority="high">
         </picture>
         <div class="wrap">
           <div>
-            <div class="hero-eyebrow">愛知県岡崎市・地域密着 三十余年</div>
+            <div class="hero__eyebrow">愛知県岡崎市・地域密着 三十余年</div>
             <h2>
-              岡崎の<span class="accent">土地</span>と<span class="accent">暮らし</span>を、<br>
+              岡崎の<span class="hero__accent">土地</span>と<span class="hero__accent">暮らし</span>を、<br>
               一貫してお任せください。
-              <span class="small">— 売買・賃貸・土地活用・解体まで —</span>
+              <span class="hero__small">— 売買・賃貸・土地活用・解体まで —</span>
             </h2>
-            <p class="lead">
+            <p class="hero__lead">
               岡崎市大西を拠点に、地域の不動産取引をきめ細やかにサポート。売買仲介から賃貸管理、土地活用のご提案、建物解体・外壁塗装まで、ワンストップで対応する地域密着型不動産会社です。
             </p>
-            <div class="hero-actions">
+            <div class="hero__actions">
               <a href="#" class="btn btn-primary" data-sec="contact">無料相談はこちら</a>
               <a href="#" class="btn btn-ghost" data-sec="properties">物件を探す</a>
             </div>
-            <div class="hero-meta">
+            <div class="hero__meta">
               <div>取扱物件数<strong>120件超</strong></div>
               <div>免許番号<strong>愛知県知事(9)</strong></div>
               <div>得意エリア<strong>大西・田口町</strong></div>
             </div>
           </div>
-          <div class="hero-search">
+          <div class="hero__search">
             <h3>かんたん物件検索</h3>
-            <div class="sub">条件を選ぶだけで、すぐに該当物件が表示されます</div>
+            <div class="hero__search-sub">条件を選ぶだけで、すぐに該当物件が表示されます</div>
             <label>物件種別</label>
             <select id="hero-type">
               <option value="">すべての種別</option>
@@ -2078,33 +2078,33 @@
       <div class="wrap">
 
         <div class="sec-head">
-          <div class="ja-eyebrow">OUR STRENGTHS</div>
+          <div class="sec-head__eyebrow">OUR STRENGTHS</div>
           <h2>選ばれる三つの理由</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="strengths">
           <div class="strength">
-            <div class="num">壱</div>
+            <div class="strength__num">壱</div>
             <h3>岡崎市北部に強い<br>地域密着の情報網</h3>
             <p>大西町・田口町・北部エリアの物件と相場、周辺環境を熟知。地元での営業歴が長く、市場に出る前の物件情報もご紹介可能です。</p>
           </div>
           <div class="strength">
-            <div class="num">弐</div>
+            <div class="strength__num">弐</div>
             <h3>売買から解体・塗装まで<br>ワンストップ対応</h3>
             <p>不動産仲介に加え、古家解体・外壁塗装・土地活用提案まで自社で完結。複数業者を探す手間とコストが省けます。</p>
           </div>
           <div class="strength">
-            <div class="num">参</div>
+            <div class="strength__num">参</div>
             <h3>福祉・医療施設用地の<br>仲介実績</h3>
             <p>障害児施設・グループホーム・クリニック等の用地仲介に注力。用途地域の確認から建築可能性調査まで一貫サポート。</p>
           </div>
         </div>
 
         <div class="sec-head">
-          <div class="ja-eyebrow">FEATURED PROPERTIES</div>
+          <div class="sec-head__eyebrow">FEATURED PROPERTIES</div>
           <h2>新着・おすすめ物件</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="property-grid" id="featured-list"></div>
@@ -2119,13 +2119,13 @@
     <section class="section" id="sec-properties">
       <div class="wrap">
         <div class="sec-head">
-          <div class="ja-eyebrow">PROPERTY SEARCH</div>
+          <div class="sec-head__eyebrow">PROPERTY SEARCH</div>
           <h2>物件検索</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="filter-bar">
-          <div class="field">
+          <div class="filter-bar__field">
             <label>物件種別</label>
             <select id="f-type">
               <option value="">すべて</option>
@@ -2134,7 +2134,7 @@
               <option value="賃貸">賃貸</option>
             </select>
           </div>
-          <div class="field">
+          <div class="filter-bar__field">
             <label>価格上限（売買）</label>
             <select id="f-price">
               <option value="">指定なし</option>
@@ -2144,13 +2144,13 @@
               <option value="99999">5,000万円超</option>
             </select>
           </div>
-          <div class="field">
+          <div class="filter-bar__field">
             <label>キーワード</label>
             <input type="text" id="f-key" placeholder="例：大西町">
           </div>
           <button onclick="filterProperties()">絞り込む</button>
         </div>
-        <div class="filter-result" id="f-result"></div>
+        <div class="filter-bar__result" id="f-result"></div>
 
         <div class="property-grid" id="property-list"></div>
 
@@ -2164,14 +2164,14 @@
     <section class="section" id="sec-services">
       <div class="wrap">
         <div class="sec-head">
-          <div class="ja-eyebrow">SERVICES</div>
+          <div class="sec-head__eyebrow">SERVICES</div>
           <h2>サービス内容</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="services">
           <div class="service">
-            <div class="service-head"><span class="label">SERVICE 01</span></div>
+            <div class="service__head"><span class="service__label">SERVICE 01</span></div>
             <h3>不動産売買仲介</h3>
             <p>戸建て・土地・マンションの売却および購入をサポート。査定・市場調査・広告出稿・契約手続きまで一貫対応します。<strong>査定は無料</strong>です。</p>
             <ul>
@@ -2182,7 +2182,7 @@
             </ul>
           </div>
           <div class="service">
-            <div class="service-head"><span class="label">SERVICE 02</span></div>
+            <div class="service__head"><span class="service__label">SERVICE 02</span></div>
             <h3>賃貸仲介・物件管理</h3>
             <p>住居用・事業用の賃貸物件のお部屋探しと、オーナー様向けの物件管理を行います。広告出稿による集客サポートも実施。</p>
             <ul>
@@ -2193,7 +2193,7 @@
             </ul>
           </div>
           <div class="service">
-            <div class="service-head"><span class="label">SERVICE 03</span></div>
+            <div class="service__head"><span class="service__label">SERVICE 03</span></div>
             <h3>土地活用・コンサルティング</h3>
             <p>遊休地・相続地のご活用方法をご提案。立地条件と需要分析を踏まえた最適なプランをご提示します。<strong>ご相談は無料</strong>です。</p>
             <ul>
@@ -2204,7 +2204,7 @@
             </ul>
           </div>
           <div class="service">
-            <div class="service-head"><span class="label">SERVICE 04</span></div>
+            <div class="service__head"><span class="service__label">SERVICE 04</span></div>
             <h3>建物解体・外壁塗装</h3>
             <p>古家付き土地の解体、住宅の外壁塗装まで自社で対応。仲介から工事まで窓口を一本化でき、手続きがスムーズです。</p>
             <ul>
@@ -2218,34 +2218,34 @@
 
         <div class="process">
           <h3>ご売却の流れ</h3>
-          <div class="process-steps">
+          <div class="process__steps">
             <div class="step">
-              <div class="circle">1</div>
+              <div class="step__circle">1</div>
               <h4>お問い合わせ</h4>
               <p>電話・メール・ご来店（無料）</p>
             </div>
             <div class="step">
-              <div class="circle">2</div>
+              <div class="step__circle">2</div>
               <h4>物件査定</h4>
               <p>机上または訪問査定</p>
             </div>
             <div class="step">
-              <div class="circle">3</div>
+              <div class="step__circle">3</div>
               <h4>媒介契約</h4>
               <p>査定価格にご納得後</p>
             </div>
             <div class="step">
-              <div class="circle">4</div>
+              <div class="step__circle">4</div>
               <h4>販売活動</h4>
               <p>広告掲載・購入希望者紹介</p>
             </div>
             <div class="step">
-              <div class="circle">5</div>
+              <div class="step__circle">5</div>
               <h4>売買契約</h4>
               <p>条件交渉・重要事項説明</p>
             </div>
             <div class="step">
-              <div class="circle">6</div>
+              <div class="step__circle">6</div>
               <h4>決済・引渡し</h4>
               <p>残代金受領・物件引渡し</p>
             </div>
@@ -2258,13 +2258,13 @@
     <section class="section" id="sec-company">
       <div class="wrap">
         <div class="sec-head">
-          <div class="ja-eyebrow">COMPANY PROFILE</div>
+          <div class="sec-head__eyebrow">COMPANY PROFILE</div>
           <h2>会社概要</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="company-grid">
-          <div class="company-info">
+          <div class="company__info">
             <dl>
               <dt>商号</dt>
               <dd>岡崎不動産株式会社</dd>
@@ -2294,15 +2294,15 @@
               <dd>愛知県知事 許可（8）第15304号</dd>
             </dl>
           </div>
-          <div class="company-side">
-            <div class="card">
+          <div class="company__side">
+            <div class="company__card">
               <h4>代表ごあいさつ</h4>
               <p>当社は岡崎の地で長年にわたり、皆さまの「住まい」と「土地」のご相談をお受けしてまいりました。地域に根を下ろすからこそ見える物件の良さ、相場の機微、そして暮らしの文脈。一件一件のご縁を大切に、これからも誠実に向き合ってまいります。</p>
               <p style="margin-top:14px;text-align:right;font-family:var(--serif);font-size:15px;color:var(--gold-light)">代表取締役　小林 和夫</p>
             </div>
-            <div class="map-card">
-              <div class="map-placeholder">岡崎市大西 — Google Maps</div>
-              <div class="map-text">
+            <div class="company__map-card">
+              <div class="company__map-placeholder">岡崎市大西 — Google Maps</div>
+              <div class="company__map-text">
                 <strong>最寄駅</strong><br>
                 名鉄「東岡崎駅」より車で約15分／JR「岡崎駅」より車で約20分<br>
                 <strong style="display:inline-block;margin-top:8px">駐車場</strong> 来客用スペースあり<br>
@@ -2317,34 +2317,34 @@
     <section class="section" id="sec-staff">
       <div class="wrap">
         <div class="sec-head">
-          <div class="ja-eyebrow">OUR TEAM</div>
+          <div class="sec-head__eyebrow">OUR TEAM</div>
           <h2>スタッフ紹介</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="staff-grid">
           <div class="staff-card">
-            <div class="staff-avatar">和</div>
-            <div class="name">小林 和夫</div>
-            <div class="role">代表取締役</div>
+            <div class="staff-card__avatar">和</div>
+            <div class="staff-card__name">小林 和夫</div>
+            <div class="staff-card__role">代表取締役</div>
             <p>創業以来、岡崎市の不動産取引に携わってまいりました。土地活用と相続対策が得意分野です。</p>
           </div>
           <div class="staff-card">
-            <div class="staff-avatar">八</div>
-            <div class="name">小林 八重子</div>
-            <div class="role">取締役社長</div>
+            <div class="staff-card__avatar">八</div>
+            <div class="staff-card__name">小林 八重子</div>
+            <div class="staff-card__role">取締役社長</div>
             <p>会社の経営を支え、お客様が安心してご相談いただける環境づくりに尽力しております。</p>
           </div>
           <div class="staff-card">
-            <div class="staff-avatar">倉</div>
-            <div class="name">倉木 寛子</div>
-            <div class="role">役員 / 専任宅地建物取引士</div>
+            <div class="staff-card__avatar">倉</div>
+            <div class="staff-card__name">倉木 寛子</div>
+            <div class="staff-card__role">役員 / 専任宅地建物取引士</div>
             <p>賃貸物件のご紹介、契約手続き、入居後のサポートまで担当。お気軽にご相談ください。</p>
           </div>
           <div class="staff-card">
-            <div class="staff-avatar">管</div>
-            <div class="name">管理担当</div>
-            <div class="role">物件管理 / 工務担当</div>
+            <div class="staff-card__avatar">管</div>
+            <div class="staff-card__name">管理担当</div>
+            <div class="staff-card__role">物件管理 / 工務担当</div>
             <p>賃貸管理、解体工事、塗装工事の窓口を担当。建物の維持管理についてご相談ください。</p>
           </div>
         </div>
@@ -2354,27 +2354,27 @@
     <section class="section" id="sec-reviews">
       <div class="wrap">
         <div class="sec-head">
-          <div class="ja-eyebrow">CUSTOMER VOICES</div>
+          <div class="sec-head__eyebrow">CUSTOMER VOICES</div>
           <h2>お客様の声</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="review-grid">
           <div class="review">
             <p>相続した実家の売却で相談しました。古家付きだったため解体も含めて一括で対応してもらえ、別々の業者を探す手間が省けました。査定額も近隣相場と乖離がなく、納得して任せられました。</p>
-            <div class="who"><strong>岡崎市内 60代男性</strong>　戸建て売却・解体</div>
+            <div class="review__who"><strong>岡崎市内 60代男性</strong>　戸建て売却・解体</div>
           </div>
           <div class="review">
             <p>グループホーム用地を探していて、用途地域や周辺環境まで丁寧に調査してくれました。建築会社との連携もスムーズで、計画通りに開設できました。</p>
-            <div class="who"><strong>医療法人 担当者様</strong>　施設用地仲介</div>
+            <div class="review__who"><strong>医療法人 担当者様</strong>　施設用地仲介</div>
           </div>
           <div class="review">
             <p>初めての一人暮らしで賃貸を契約。希望条件が細かかったのですが、何件も内見に付き合ってくださり、納得のいく物件に決まりました。</p>
-            <div class="who"><strong>岡崎市内 20代女性</strong>　賃貸契約</div>
+            <div class="review__who"><strong>岡崎市内 20代女性</strong>　賃貸契約</div>
           </div>
           <div class="review">
             <p>親から相続した土地の活用方法を相談。駐車場経営と売却の両方の試算を出してもらえて、家族でじっくり判断できました。押しつけがましさが無く、相談しやすかったです。</p>
-            <div class="who"><strong>岡崎市内 50代女性</strong>　土地活用相談</div>
+            <div class="review__who"><strong>岡崎市内 50代女性</strong>　土地活用相談</div>
           </div>
         </div>
 
@@ -2385,43 +2385,43 @@
     <section class="section" id="sec-faq">
       <div class="wrap">
         <div class="sec-head">
-          <div class="ja-eyebrow">FREQUENTLY ASKED</div>
+          <div class="sec-head__eyebrow">FREQUENTLY ASKED</div>
           <h2>よくある質問</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="faq-list">
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)"><span class="qmark">Q.</span><span>査定にお金はかかりますか？</span><span class="arrow">▼</span></div>
-            <div class="faq-a">いいえ、査定は無料です。机上査定・訪問査定どちらも料金はかかりません。査定後に媒介契約をするかどうかはお客様の自由です。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>査定にお金はかかりますか？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">いいえ、査定は無料です。机上査定・訪問査定どちらも料金はかかりません。査定後に媒介契約をするかどうかはお客様の自由です。</div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)"><span class="qmark">Q.</span><span>査定にはどれくらい時間がかかりますか？</span><span class="arrow">▼</span></div>
-            <div class="faq-a">机上査定（簡易査定）は最短当日〜2営業日、訪問査定は現地確認後3〜5営業日程度で結果をお伝えします。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>査定にはどれくらい時間がかかりますか？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">机上査定（簡易査定）は最短当日〜2営業日、訪問査定は現地確認後3〜5営業日程度で結果をお伝えします。</div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)"><span class="qmark">Q.</span><span>仲介手数料はいくらですか？</span><span class="arrow">▼</span></div>
-            <div class="faq-a">宅建業法で定められた上限額を頂戴しています。売買価格400万円超の場合、（売買価格×3%＋6万円）＋消費税が上限となります。賃貸の場合は賃料1ヶ月分（＋消費税）が上限です。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>仲介手数料はいくらですか？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">宅建業法で定められた上限額を頂戴しています。売買価格400万円超の場合、（売買価格×3%＋6万円）＋消費税が上限となります。賃貸の場合は賃料1ヶ月分（＋消費税）が上限です。</div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)"><span class="qmark">Q.</span><span>遠方に住んでいますが、岡崎の物件を売却できますか？</span><span class="arrow">▼</span></div>
-            <div class="faq-a">もちろん可能です。書類のやり取りは郵送・電子契約に対応しております。決済時のみご来岡いただくか、司法書士への委任で対応できます。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>遠方に住んでいますが、岡崎の物件を売却できますか？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">もちろん可能です。書類のやり取りは郵送・電子契約に対応しております。決済時のみご来岡いただくか、司法書士への委任で対応できます。</div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)"><span class="qmark">Q.</span><span>古家付きの土地を売りたいのですが、解体してから売るべきですか？</span><span class="arrow">▼</span></div>
-            <div class="faq-a">物件の状態と買主の希望次第です。解体費用や税金（特定空家・更地の固定資産税等）も考慮して、最適なご提案をいたします。当社で解体工事まで一括対応も可能です。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>古家付きの土地を売りたいのですが、解体してから売るべきですか？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">物件の状態と買主の希望次第です。解体費用や税金（特定空家・更地の固定資産税等）も考慮して、最適なご提案をいたします。当社で解体工事まで一括対応も可能です。</div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)"><span class="qmark">Q.</span><span>賃貸を借りるとき、初期費用はどれくらい必要ですか？</span><span class="arrow">▼</span></div>
-            <div class="faq-a">一般的には家賃の4〜5ヶ月分（敷金・礼金・前家賃・仲介手数料・火災保険等）が目安です。物件によって異なりますので、個別にご案内いたします。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>賃貸を借りるとき、初期費用はどれくらい必要ですか？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">一般的には家賃の4〜5ヶ月分（敷金・礼金・前家賃・仲介手数料・火災保険等）が目安です。物件によって異なりますので、個別にご案内いたします。</div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)"><span class="qmark">Q.</span><span>福祉施設用地を探していますが対応できますか？</span><span class="arrow">▼</span></div>
-            <div class="faq-a">はい、障害児施設・グループホーム・クリニック等の用地仲介に注力しています。用途地域・接道・建築可能性の調査までサポートします。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>福祉施設用地を探していますが対応できますか？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">はい、障害児施設・グループホーム・クリニック等の用地仲介に注力しています。用途地域・接道・建築可能性の調査までサポートします。</div>
           </div>
           <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)"><span class="qmark">Q.</span><span>水曜定休とのことですが、水曜に相談したい場合は？</span><span class="arrow">▼</span></div>
-            <div class="faq-a">事前にご予約いただければ水曜日や夜間でも対応可能です。お電話またはお問い合わせフォームからご連絡ください。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>水曜定休とのことですが、水曜に相談したい場合は？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">事前にご予約いただければ水曜日や夜間でも対応可能です。お電話またはお問い合わせフォームからご連絡ください。</div>
           </div>
         </div>
       </div>
@@ -2430,33 +2430,33 @@
     <section class="section" id="sec-contact">
       <div class="wrap">
         <div class="sec-head">
-          <div class="ja-eyebrow">CONTACT US</div>
+          <div class="sec-head__eyebrow">CONTACT US</div>
           <h2>お問い合わせ</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="contact-grid">
-          <div class="contact-side">
+          <div class="contact__side">
             <h3>お急ぎの方は<br>お電話が確実です</h3>
             <p style="font-size:13.5px;color:#cdc6b6;line-height:1.85">物件のお問い合わせ・査定のご依頼・ご来店のご予約など、お気軽にどうぞ。</p>
-            <div class="big-tel">
-              <span class="label">TEL</span>
+            <div class="contact__big-tel">
+              <span class="contact__tel-label">TEL</span>
               <a href="tel:0564461655"><strong>0564-46-1655</strong></a>
             </div>
-            <div class="hours">
+            <div class="contact__hours">
               <strong>受付時間</strong>　9:00 – 18:00<br>
               <strong>定休日</strong>　水曜日<br>
               （土日祝もご予約で対応可）
             </div>
           </div>
 
-          <div class="contact-form">
+          <div class="contact__form">
             <h3>メールでのお問い合わせ</h3>
-            <p class="lead">必要事項をご記入のうえ送信してください。<strong>2営業日以内</strong>にご返信いたします。</p>
+            <p class="contact__lead">必要事項をご記入のうえ送信してください。<strong>2営業日以内</strong>にご返信いたします。</p>
 
             <form onsubmit="return submitForm(event)">
               <div class="form-row">
-                <label>お問い合わせ種別<span class="req">*</span></label>
+                <label>お問い合わせ種別<span class="form-row__req">*</span></label>
                 <select name="type" required>
                   <option value="">選択してください</option>
                   <option>物件購入の相談</option>
@@ -2469,11 +2469,11 @@
                 </select>
               </div>
               <div class="form-row">
-                <label>お名前<span class="req">*</span></label>
+                <label>お名前<span class="form-row__req">*</span></label>
                 <input type="text" name="name" required placeholder="例：岡崎 太郎">
               </div>
               <div class="form-row">
-                <label>電話番号<span class="req">*</span></label>
+                <label>電話番号<span class="form-row__req">*</span></label>
                 <input type="tel" name="tel" required placeholder="例：090-1234-5678">
               </div>
               <div class="form-row">
@@ -2482,18 +2482,18 @@
               </div>
               <div class="form-row">
                 <label>ご希望の連絡方法</label>
-                <div class="radio-group">
+                <div class="form-row__radio-group">
                   <label><input type="radio" name="contact" value="tel" checked>電話</label>
                   <label><input type="radio" name="contact" value="mail">メール</label>
                   <label><input type="radio" name="contact" value="any">どちらでも</label>
                 </div>
               </div>
               <div class="form-row">
-                <label>ご相談内容<span class="req">*</span></label>
+                <label>ご相談内容<span class="form-row__req">*</span></label>
                 <textarea name="message" required placeholder="物件の所在地・ご予算・ご希望条件など、できるだけ具体的にお書きください。"></textarea>
               </div>
               <div class="form-privacy">
-                <label><input type="checkbox" required> <a href="#" data-sec="legal">プライバシーポリシー</a>に同意する<span class="req">*</span></label>
+                <label><input type="checkbox" required> <a href="#" data-sec="legal">プライバシーポリシー</a>に同意する<span class="form-row__req">*</span></label>
               </div>
               <button type="submit" class="form-submit">送信する</button>
               <div id="submit-result" class="submit-result"></div>
@@ -2506,9 +2506,9 @@
     <section class="section" id="sec-legal">
       <div class="wrap">
         <div class="sec-head">
-          <div class="ja-eyebrow">LEGAL NOTICE</div>
+          <div class="sec-head__eyebrow">LEGAL NOTICE</div>
           <h2>特定商取引法に基づく表記・プライバシーポリシー</h2>
-          <div class="deco"><span></span></div>
+          <div class="sec-head__deco"><span></span></div>
         </div>
 
         <div class="legal-section">
@@ -2557,27 +2557,27 @@
 
   <button class="chat-toggle" onclick="toggleChat()">💬 ご質問はこちら</button>
   <div class="chatbot" id="chatbot">
-    <div class="chatbot-header">
+    <div class="chatbot__header">
       <strong>かんたん質問ナビ</strong>
-      <button class="chatbot-close" onclick="toggleChat()" aria-label="閉じる">×</button>
+      <button class="chatbot__close" onclick="toggleChat()" aria-label="閉じる">×</button>
     </div>
-    <div class="chatbot-body" id="chat-body"></div>
+    <div class="chatbot__body" id="chat-body"></div>
   </div>
 
   <footer>
     <div class="wrap">
-      <div class="foot-grid">
-        <div class="brand">
+      <div class="footer__grid">
+        <div class="footer__brand">
           <a href="#" class="logo" data-sec="home">
-            <div class="logo-mark"><span>岡</span></div>
-            <div class="logo-text">
-              <div class="name">岡崎不動産</div>
-              <div class="sub">OKAZAKI REAL ESTATE</div>
+            <div class="logo__mark"><span>岡</span></div>
+            <div class="logo__text">
+              <div class="logo__name">岡崎不動産</div>
+              <div class="logo__sub">OKAZAKI REAL ESTATE</div>
             </div>
           </a>
           <p>〒444-0871<br>愛知県岡崎市大西3丁目2番地17<br>TEL: 0564-46-1655<br>FAX: 0564-23-0017</p>
           <p style="margin-top:6px">営業時間 9:00–18:00／水曜定休</p>
-          <div class="license">
+          <div class="footer__license">
             宅地建物取引業<br>
             愛知県知事 (9) 第15304号
           </div>
@@ -2612,7 +2612,7 @@
           </ul>
         </div>
       </div>
-      <div class="copy">© 岡崎不動産株式会社 All Rights Reserved.</div>
+      <div class="footer__copy">© 岡崎不動産株式会社 All Rights Reserved.</div>
     </div>
   </footer>
 
@@ -2713,13 +2713,13 @@
     ];
 
     function priceLabel(p) {
-      if (p.rent) return p.price.toLocaleString() + '<span class="unit">万円/月</span>';
-      return p.price.toLocaleString() + '<span class="unit">万円</span>';
+      if (p.rent) return p.price.toLocaleString() + '<span class="property__price-unit">万円/月</span>';
+      return p.price.toLocaleString() + '<span class="property__price-unit">万円</span>';
     }
 
     function tagClass(t) {
-      if (t === "土地") return "land";
-      if (t === "賃貸") return "rent";
+      if (t === "土地") return "property__tag--land";
+      if (t === "賃貸") return "property__tag--rent";
       return "";
     }
 
@@ -2727,22 +2727,22 @@
       const div = document.createElement("article");
       div.className = "property";
       div.innerHTML = `
-    <div class="property-img">
-      <span class="property-tag ${tagClass(p.type)}">${p.type}</span>
-      <span class="property-img-icon">○</span>
+    <div class="property__img">
+      <span class="property__tag ${tagClass(p.type)}">${p.type}</span>
+      <span class="property__img-icon">○</span>
     </div>
-    <div class="property-body">
+    <div class="property__body">
       <h4>${p.title}</h4>
-      <div class="property-addr">${p.addr}</div>
-      <div class="property-price">${priceLabel(p)}</div>
-      <div class="property-spec">
+      <div class="property__addr">${p.addr}</div>
+      <div class="property__price">${priceLabel(p)}</div>
+      <div class="property__spec">
         <div>間取<strong>${p.layout}</strong></div>
         <div>面積<strong style="font-size:11px">${p.area.split('／')[0]}</strong></div>
         <div>築年<strong>${p.year}</strong></div>
       </div>
-      <div class="property-actions">
-        <a href="tel:0564461655" class="tel-btn">電話する</a>
-        <a href="#" class="mail-btn" onclick="navTo('contact');return false">メール</a>
+      <div class="property__actions">
+        <a href="tel:0564461655" class="property__tel-btn">電話する</a>
+        <a href="#" class="property__mail-btn" onclick="navTo('contact');return false">メール</a>
       </div>
     </div>
   `;
@@ -2804,13 +2804,13 @@
     });
 
     function toggleFaq(el) {
-      el.parentElement.classList.toggle("open");
+      el.parentElement.classList.toggle("faq-item--open");
     }
 
     function submitForm(e) {
       e.preventDefault();
       const r = document.getElementById("submit-result");
-      r.classList.add("show");
+      r.classList.add("submit-result--show");
       r.textContent = "✓ お問い合わせを受け付けました。2営業日以内にご返信いたします。お急ぎの場合は 0564-46-1655 までお電話ください。";
       e.target.reset();
       r.scrollIntoView({
@@ -2966,7 +2966,7 @@
       p.textContent = CHAT_TREE[node].msg;
       body.appendChild(p);
       const opts = document.createElement("div");
-      opts.className = "opts";
+      opts.className = "chatbot__opts";
       CHAT_TREE[node].opts.forEach(o => {
         const b = document.createElement("button");
         b.textContent = "▶ " + o.label;
@@ -2979,7 +2979,7 @@
       body.appendChild(opts);
       if (node !== "root") {
         const back = document.createElement("a");
-        back.className = "chat-back";
+        back.className = "chatbot__back";
         back.textContent = "← 最初に戻る";
         back.onclick = (e) => {
           e.preventDefault();
@@ -2991,8 +2991,8 @@
 
     function toggleChat() {
       const c = document.getElementById("chatbot");
-      c.classList.toggle("open");
-      if (c.classList.contains("open")) renderChat("root");
+      c.classList.toggle("chatbot--open");
+      if (c.classList.contains("chatbot--open")) renderChat("root");
     }
 
     renderFeatured();
