@@ -61,7 +61,7 @@
       <div class="hero">
         <picture class="hero__bg">
           <source media="(max-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-sp.webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/hero-pc.webp" alt="岡崎の風景" loading="eager" fetchpriority="high">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-pc.webp" alt="岡崎の風景" loading="eager" fetchpriority="high">
         </picture>
         <div class="wrap">
           <div>
