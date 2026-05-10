@@ -1,0 +1,15 @@
+# Mac(フォルダの表示設定)
+.DS_Store
+
+# Node(外部ライブラリ)
+node_modules/
+dist/
+
+# Env(環境変数)
+.env
+
+# Editor(個人設定)
+.vscode/
+
+# Logs(一時ファイル)
+*.log
