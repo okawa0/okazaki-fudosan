@@ -1,0 +1,15 @@
+:root {
+  --ink: #2d2820;
+  --ink-deep: #1a1510;
+  --paper: #fffef8;
+  --paper-light: #ffffff;
+  --sumi: #3d3020;
+  --shu: #b71c1c;
+  --shu-deep: #8b0000;
+  --gold: #d4a800;
+  --gold-light: #f7c600;
+  --line: #e8deb8;
+  --muted: #7a6840;
+  --serif: "Shippori Mincho", "Noto Serif JP", serif;
+  --sans: "Noto Sans JP", sans-serif;
+}
