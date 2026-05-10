@@ -1,3 +1,118 @@
+/* =====================
+    ローカルフォントの読み込み
+   ===================== */
+/* #region/local-fonts */
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("../fonts/NotoSansJP-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("../fonts/NotoSansJP-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("../fonts/NotoSansJP-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif JP";
+  src: url("../fonts/NotoSerifJP-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif JP";
+  src: url("../fonts/NotoSerifJP-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif JP";
+  src: url("../fonts/NotoSerifJP-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Shippori Mincho";
+  src: url("../fonts/ShipporiMincho-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Shippori Mincho";
+  src: url("../fonts/ShipporiMincho-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+/* #endregion/local-fonts */
+
+/* =====================
+    リセットCSS
+   ===================== */
+/* #region/reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* #endregion/reset */
+
+/* =====================
+    ベーススタイル
+   ===================== */
+/* #region/base */
 :root {
   --ink: #2d2820;
   --ink-deep: #1a1510;
@@ -12,17 +127,6 @@
   --muted: #7a6840;
   --serif: "Shippori Mincho", "Noto Serif JP", serif;
   --sans: "Noto Sans JP", sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -55,10 +159,7 @@ a:hover {
   color: var(--shu);
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
+/* #endregion/base */
 
 .wrap {
   max-width: 1180px;
@@ -1289,17 +1390,17 @@ img {
 }
 
 .contact__side {
-  background: #FFFDE7;
+  background: #fffde7;
   color: #333;
   padding: 36px 32px;
-  border: 2px solid #B71C1C;
+  border: 2px solid #b71c1c;
   position: relative;
 }
 
 .contact__side-title {
   font-family: var(--serif);
   font-size: 20px;
-  color: #B71C1C;
+  color: #b71c1c;
   margin-bottom: 18px;
   letter-spacing: 0.06em;
 }
@@ -1312,7 +1413,7 @@ img {
 }
 
 .contact__tel-link {
-  color: #B71C1C;
+  color: #b71c1c;
   text-decoration: none;
 }
 
@@ -1338,7 +1439,7 @@ img {
 }
 
 .contact__hours-label {
-  color: #B71C1C;
+  color: #b71c1c;
   font-weight: 500;
 }
 
