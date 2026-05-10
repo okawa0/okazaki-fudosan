@@ -3,11 +3,11 @@
    ===================== */
 /* #region/base */
 body {
-  font-family: var(--sans);
+  font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.75;
-  color: var(--sumi);
-  background: var(--paper);
+  color: var(--text-base);
+  background: var(--bg-page);
   background-image:
     radial-gradient(
       circle at 8% 12%,
@@ -23,13 +23,13 @@ body {
 }
 
 a {
-  color: var(--ink);
+  color: var(--text-heading);
   text-decoration: none;
   transition: color 0.15s;
 }
 
 a:hover {
-  color: var(--shu);
+  color: var(--primary);
 }
 
 /* #endregion/base */
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .site-header {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -115,40 +115,40 @@ a:hover {
 }
 
 .logo__name {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 22px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--text-heading);
   letter-spacing: 0.08em;
   line-height: 1.1;
 }
 
 .logo__sub {
   font-size: 11px;
-  color: var(--muted);
+  color: var(--text-muted);
   letter-spacing: 0.18em;
   margin-top: 2px;
 }
 
 .cta-header {
-  background: var(--gold-light);
+  background: var(--secondary-bright);
   color: #1a1510;
   padding: 10px 22px;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.06em;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--secondary);
 }
 
 .cta-header:hover {
-  background: var(--gold);
+  background: var(--secondary);
   color: #1a1510;
 }
 
 .site-nav {
   background: #fff;
-  border-top: 1px solid var(--line);
-  border-bottom: 2px solid var(--line);
+  border-top: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
@@ -184,12 +184,12 @@ a:hover {
 
 .site-nav__link:hover {
   background: rgba(183, 28, 28, 0.05);
-  color: var(--shu);
+  color: var(--primary);
 }
 
 .site-nav__link.active {
   background: transparent;
-  color: var(--shu);
+  color: var(--primary);
   font-weight: 700;
 }
 
@@ -200,15 +200,15 @@ a:hover {
   right: 0;
   bottom: 0;
   height: 3px;
-  background: var(--shu);
+  background: var(--primary);
 }
 
 .hero {
   position: relative;
   background: #fffde7;
-  color: var(--sumi);
+  color: var(--text-base);
   overflow: hidden;
-  border-bottom: 4px solid var(--gold-light);
+  border-bottom: 4px solid var(--secondary-bright);
 }
 
 /* 背景画像レイヤー */
@@ -273,7 +273,7 @@ a:hover {
   gap: 10px;
   font-size: 12px;
   letter-spacing: 0.3em;
-  color: var(--shu);
+  color: var(--primary);
   margin-bottom: 18px;
   font-weight: 500;
 }
@@ -282,11 +282,11 @@ a:hover {
   content: "";
   width: 32px;
   height: 1px;
-  background: var(--shu);
+  background: var(--primary);
 }
 
 .hero__title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 46px;
   line-height: 1.3;
   letter-spacing: 0.04em;
@@ -296,7 +296,7 @@ a:hover {
 }
 
 .hero__accent {
-  color: var(--gold);
+  color: var(--secondary);
 }
 
 .hero__small {
@@ -332,7 +332,7 @@ a:hover {
 .hero__meta-value {
   display: block;
   color: #b71c1c;
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 22px;
   font-weight: 700;
   margin-top: 2px;
@@ -359,34 +359,34 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--gold-light);
+  background: var(--secondary-bright);
   color: #1a1510;
-  border-color: var(--gold);
+  border-color: var(--secondary);
   font-weight: 700;
 }
 
 .btn-primary:hover {
-  background: var(--gold);
+  background: var(--secondary);
   color: #1a1510;
-  border-color: var(--gold);
+  border-color: var(--secondary);
 }
 
 .btn-ghost {
   background: transparent;
-  color: var(--shu);
-  border-color: var(--shu);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-ghost:hover {
-  background: var(--shu);
+  background: var(--primary);
   color: #fff;
 }
 
 .hero__search {
-  background: var(--paper-light);
-  color: var(--sumi);
+  background: var(--bg-card);
+  color: var(--text-base);
   padding: 28px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   position: relative;
 }
 
@@ -397,8 +397,8 @@ a:hover {
   left: -1px;
   width: 24px;
   height: 24px;
-  border-top: 2px solid var(--gold);
-  border-left: 2px solid var(--gold);
+  border-top: 2px solid var(--secondary);
+  border-left: 2px solid var(--secondary);
 }
 
 .hero__search::after {
@@ -408,21 +408,21 @@ a:hover {
   right: -1px;
   width: 24px;
   height: 24px;
-  border-bottom: 2px solid var(--gold);
-  border-right: 2px solid var(--gold);
+  border-bottom: 2px solid var(--secondary);
+  border-right: 2px solid var(--secondary);
 }
 
 .hero__search-title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 20px;
-  color: var(--ink);
+  color: var(--text-heading);
   margin-bottom: 6px;
   letter-spacing: 0.05em;
 }
 
 .hero__search-sub {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-bottom: 20px;
   letter-spacing: 0.05em;
 }
@@ -430,7 +430,7 @@ a:hover {
 .hero__search-label {
   display: block;
   font-size: 11.5px;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-bottom: 5px;
   letter-spacing: 0.12em;
   font-weight: 500;
@@ -442,22 +442,22 @@ a:hover {
   padding: 11px 12px;
   font-family: inherit;
   font-size: 14px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   background: #fff;
-  color: var(--sumi);
+  color: var(--text-base);
   margin-bottom: 14px;
 }
 
 .hero__search-select:focus,
 .hero__search-input:focus {
   outline: 0;
-  border-color: var(--ink);
+  border-color: var(--text-heading);
 }
 
 .hero__search-btn {
   width: 100%;
   padding: 13px;
-  background: var(--shu);
+  background: var(--primary);
   color: #fff;
   border: 0;
   font-family: inherit;
@@ -469,7 +469,7 @@ a:hover {
 }
 
 .hero__search-btn:hover {
-  background: var(--shu-deep);
+  background: var(--primary-dark);
 }
 
 .section {
@@ -499,16 +499,16 @@ a:hover {
 .sec-head__eyebrow {
   font-size: 11px;
   letter-spacing: 0.4em;
-  color: var(--gold);
+  color: var(--secondary);
   margin-bottom: 10px;
   font-weight: 500;
 }
 
 .sec-head__title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 32px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--text-heading);
   letter-spacing: 0.08em;
 }
 
@@ -525,13 +525,13 @@ a:hover {
   content: "";
   width: 40px;
   height: 1px;
-  background: var(--line);
+  background: var(--border);
 }
 
 .sec-head__deco-diamond {
   width: 6px;
   height: 6px;
-  background: var(--gold);
+  background: var(--secondary);
   transform: rotate(45deg);
 }
 
@@ -540,13 +540,13 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
   margin: 24px 0 48px;
-  border: 1px solid var(--line);
-  background: var(--paper-light);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
 }
 
 .strength {
   padding: 32px 28px;
-  border-right: 1px solid var(--line);
+  border-right: 1px solid var(--border);
   position: relative;
 }
 
@@ -555,10 +555,10 @@ a:hover {
 }
 
 .strength__num {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 48px;
   font-weight: 800;
-  color: var(--gold);
+  color: var(--secondary);
   line-height: 1;
   margin-bottom: 14px;
   display: flex;
@@ -570,14 +570,14 @@ a:hover {
   content: "";
   flex: 1;
   height: 1px;
-  background: var(--line);
+  background: var(--border);
 }
 
 .strength__title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 20px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--text-heading);
   margin-bottom: 12px;
   letter-spacing: 0.05em;
   line-height: 1.5;
@@ -586,7 +586,7 @@ a:hover {
 .strength__text {
   font-size: 14px;
   line-height: 1.8;
-  color: var(--sumi);
+  color: var(--text-base);
 }
 
 .property-grid {
@@ -597,8 +597,8 @@ a:hover {
 }
 
 .property {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   transition:
@@ -613,7 +613,7 @@ a:hover {
 
 .property__img {
   aspect-ratio: 4/3;
-  background: var(--ink);
+  background: var(--text-heading);
   position: relative;
   overflow: hidden;
   display: grid;
@@ -636,9 +636,9 @@ a:hover {
 }
 
 .property__img-icon {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 32px;
-  color: var(--gold);
+  color: var(--secondary);
   letter-spacing: 0.1em;
   font-weight: 700;
   position: relative;
@@ -648,7 +648,7 @@ a:hover {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: var(--shu);
+  background: var(--primary);
   color: #fff;
   font-size: 11px;
   padding: 4px 10px;
@@ -658,7 +658,7 @@ a:hover {
 }
 
 .property__tag--land {
-  background: var(--gold);
+  background: var(--secondary);
 }
 
 .property__tag--rent {
@@ -673,10 +673,10 @@ a:hover {
 }
 
 .property__title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 16px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--text-heading);
   margin-bottom: 6px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -684,15 +684,15 @@ a:hover {
 
 .property__addr {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-bottom: 14px;
 }
 
 .property__price {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 26px;
   font-weight: 800;
-  color: var(--shu);
+  color: var(--primary);
   letter-spacing: 0.02em;
   line-height: 1;
   margin-bottom: 14px;
@@ -709,15 +709,15 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
   margin-bottom: 16px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--border);
 }
 
 .property__spec-item {
   padding: 8px 4px;
   text-align: center;
-  border-right: 1px solid var(--line);
+  border-right: 1px solid var(--border);
   font-size: 11px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .property__spec-item:last-child {
@@ -726,7 +726,7 @@ a:hover {
 
 .property__spec-value {
   display: block;
-  color: var(--ink);
+  color: var(--text-heading);
   font-size: 13px;
   font-weight: 600;
   margin-top: 2px;
@@ -745,33 +745,33 @@ a:hover {
   font-size: 12px;
   letter-spacing: 0.05em;
   font-weight: 500;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--text-heading);
 }
 
 .property__tel-btn {
-  background: var(--ink);
+  background: var(--text-heading);
   color: #fff;
 }
 
 .property__tel-btn:hover {
-  background: var(--shu);
-  border-color: var(--shu);
+  background: var(--primary);
+  border-color: var(--primary);
   color: #fff;
 }
 
 .property__mail-btn {
   background: transparent;
-  color: var(--ink);
+  color: var(--text-heading);
 }
 
 .property__mail-btn:hover {
-  background: var(--ink);
+  background: var(--text-heading);
   color: #fff;
 }
 
 .filter-bar {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   padding: 20px 24px;
   margin: 20px 0;
   display: flex;
@@ -788,7 +788,7 @@ a:hover {
 .filter-bar__label {
   display: block;
   font-size: 11px;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-bottom: 5px;
   letter-spacing: 0.12em;
   font-weight: 500;
@@ -800,14 +800,14 @@ a:hover {
   padding: 9px 10px;
   font-family: inherit;
   font-size: 13px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   background: #fff;
-  color: var(--sumi);
+  color: var(--text-base);
 }
 
 .filter-bar__btn {
   padding: 10px 24px;
-  background: var(--ink);
+  background: var(--text-heading);
   color: #fff;
   border: 0;
   font-family: inherit;
@@ -818,12 +818,12 @@ a:hover {
 }
 
 .filter-bar__btn:hover {
-  background: var(--shu);
+  background: var(--primary);
 }
 
 .filter-bar__result {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
   margin: 8px 0;
 }
 
@@ -832,14 +832,14 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
   margin: 24px 0 48px;
-  border: 1px solid var(--line);
-  background: var(--paper-light);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
 }
 
 .service {
   padding: 32px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .service:nth-child(2n) {
@@ -858,20 +858,20 @@ a:hover {
 }
 
 .service__label {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 11px;
-  color: var(--gold);
+  color: var(--secondary);
   letter-spacing: 0.25em;
   font-weight: 600;
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 1px solid var(--secondary);
   padding-bottom: 2px;
 }
 
 .service__title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 22px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--text-heading);
   letter-spacing: 0.04em;
   margin-bottom: 14px;
 }
@@ -879,7 +879,7 @@ a:hover {
 .service__text {
   font-size: 14px;
   line-height: 1.85;
-  color: var(--sumi);
+  color: var(--text-base);
   margin-bottom: 14px;
 }
 
@@ -892,8 +892,8 @@ a:hover {
   font-size: 13px;
   padding: 6px 0 6px 18px;
   position: relative;
-  color: var(--sumi);
-  border-bottom: 1px dotted var(--line);
+  color: var(--text-base);
+  border-bottom: 1px dotted var(--border);
 }
 
 .service__list-item:last-child {
@@ -907,21 +907,21 @@ a:hover {
   top: 13px;
   width: 8px;
   height: 1px;
-  background: var(--gold);
+  background: var(--secondary);
 }
 
 .process {
   margin: 24px 0 48px;
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   padding: 36px 32px;
 }
 
 .process__title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 20px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--text-heading);
   margin-bottom: 20px;
   letter-spacing: 0.05em;
   text-align: center;
@@ -941,7 +941,7 @@ a:hover {
   left: 8%;
   right: 8%;
   height: 1px;
-  background: var(--line);
+  background: var(--border);
 }
 
 .step {
@@ -953,35 +953,35 @@ a:hover {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--paper-light);
-  border: 2px solid var(--ink);
+  background: var(--bg-card);
+  border: 2px solid var(--text-heading);
   margin: 0 auto 12px;
   display: grid;
   place-items: center;
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-weight: 800;
   font-size: 18px;
-  color: var(--ink);
+  color: var(--text-heading);
   position: relative;
   z-index: 1;
 }
 
 .step:last-child .step__circle {
-  background: var(--shu);
+  background: var(--primary);
   color: #fff;
-  border-color: var(--shu);
+  border-color: var(--primary);
 }
 
 .step__title {
   font-size: 13px;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--text-heading);
   margin-bottom: 4px;
 }
 
 .step__text {
   font-size: 11px;
-  color: var(--muted);
+  color: var(--text-muted);
   line-height: 1.6;
   padding: 0 6px;
 }
@@ -994,8 +994,8 @@ a:hover {
 }
 
 .company__info {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
 }
 
 .company__info-table {
@@ -1006,12 +1006,12 @@ a:hover {
 .company__info-term,
 .company__info-desc {
   padding: 14px 20px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
   font-size: 14px;
 }
 
 .company__info-term {
-  background: var(--shu);
+  background: var(--primary);
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -1030,15 +1030,15 @@ a:hover {
 }
 
 .company__card {
-  background: var(--shu);
-  color: var(--paper-light);
+  background: var(--primary);
+  color: var(--bg-card);
   padding: 28px;
-  border: 1px solid var(--gold-light);
+  border: 1px solid var(--secondary-bright);
   position: relative;
 }
 
 .company__card-title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 18px;
   color: #f7c600;
   margin-bottom: 12px;
@@ -1052,19 +1052,19 @@ a:hover {
 }
 
 .company__map-card {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   padding: 0;
   overflow: hidden;
 }
 
 .company__map-placeholder {
   height: 160px;
-  background: var(--shu-deep);
+  background: var(--primary-dark);
   display: grid;
   place-items: center;
   color: #f7c600;
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 14px;
   letter-spacing: 0.1em;
   position: relative;
@@ -1086,7 +1086,7 @@ a:hover {
 }
 
 .company__map-label {
-  color: var(--ink);
+  color: var(--text-heading);
   font-weight: 600;
 }
 
@@ -1098,8 +1098,8 @@ a:hover {
 }
 
 .staff-card {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   padding: 24px;
   text-align: center;
   position: relative;
@@ -1109,29 +1109,29 @@ a:hover {
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--shu), var(--shu-deep));
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   margin: 0 auto 16px;
   display: grid;
   place-items: center;
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 34px;
   font-weight: 800;
   color: #f7c600;
-  border: 2px solid var(--gold-light);
+  border: 2px solid var(--secondary-bright);
 }
 
 .staff-card__name {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 18px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--text-heading);
   margin-bottom: 4px;
   letter-spacing: 0.05em;
 }
 
 .staff-card__role {
   font-size: 11px;
-  color: var(--gold);
+  color: var(--secondary);
   letter-spacing: 0.18em;
   margin-bottom: 14px;
   font-weight: 500;
@@ -1140,7 +1140,7 @@ a:hover {
 .staff-card__text {
   font-size: 13px;
   line-height: 1.75;
-  color: var(--sumi);
+  color: var(--text-base);
   text-align: left;
 }
 
@@ -1152,8 +1152,8 @@ a:hover {
 }
 
 .review {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   padding: 28px;
   position: relative;
 }
@@ -1163,10 +1163,10 @@ a:hover {
   position: absolute;
   top: 8px;
   left: 14px;
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 48px;
   font-weight: 800;
-  color: var(--gold);
+  color: var(--secondary);
   line-height: 1;
   opacity: 0.4;
 }
@@ -1174,21 +1174,21 @@ a:hover {
 .review__text {
   font-size: 14px;
   line-height: 1.95;
-  color: var(--sumi);
+  color: var(--text-base);
   padding-left: 24px;
   margin-bottom: 16px;
 }
 
 .review__who {
   padding-top: 14px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--border);
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
   letter-spacing: 0.05em;
 }
 
 .review__who-name {
-  color: var(--ink);
+  color: var(--text-heading);
   font-weight: 600;
   font-size: 13px;
 }
@@ -1198,22 +1198,22 @@ a:hover {
 }
 
 .faq-item {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   margin-bottom: 8px;
 }
 
 .faq-item__question {
   padding: 18px 24px;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--text-heading);
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 14px;
   font-size: 14.5px;
   letter-spacing: 0.03em;
-  font-family: var(--sans);
+  font-family: var(--font-sans);
   transition: background 0.15s;
 }
 
@@ -1222,17 +1222,17 @@ a:hover {
 }
 
 .faq-item__qmark {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 20px;
   font-weight: 800;
-  color: var(--gold);
+  color: var(--secondary);
   flex-shrink: 0;
   width: 24px;
 }
 
 .faq-item__arrow {
   margin-left: auto;
-  color: var(--muted);
+  color: var(--text-muted);
   transition: transform 0.2s;
   font-size: 12px;
 }
@@ -1246,8 +1246,8 @@ a:hover {
   padding: 0 24px 20px 62px;
   font-size: 14px;
   line-height: 1.85;
-  color: var(--sumi);
-  border-top: 1px dotted var(--line);
+  color: var(--text-base);
+  border-top: 1px dotted var(--border);
   padding-top: 16px;
 }
 
@@ -1271,7 +1271,7 @@ a:hover {
 }
 
 .contact__side-title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 20px;
   color: #b71c1c;
   margin-bottom: 18px;
@@ -1298,7 +1298,7 @@ a:hover {
 
 .contact__tel-number {
   display: block;
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 34px;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -1317,22 +1317,22 @@ a:hover {
 }
 
 .contact__form {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   padding: 36px 32px;
 }
 
 .contact__form-title {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 20px;
-  color: var(--ink);
+  color: var(--text-heading);
   margin-bottom: 8px;
   letter-spacing: 0.06em;
 }
 
 .contact__lead {
   font-size: 13px;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-bottom: 20px;
 }
 
@@ -1343,14 +1343,14 @@ a:hover {
 .form-row__label {
   display: block;
   font-size: 12px;
-  color: var(--ink);
+  color: var(--text-heading);
   margin-bottom: 6px;
   font-weight: 500;
   letter-spacing: 0.05em;
 }
 
 .form-row__req {
-  color: var(--shu);
+  color: var(--primary);
   margin-left: 4px;
   font-weight: 700;
 }
@@ -1362,9 +1362,9 @@ a:hover {
   padding: 11px 14px;
   font-family: inherit;
   font-size: 14px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   background: #fff;
-  color: var(--sumi);
+  color: var(--text-base);
 }
 
 .form-row__textarea {
@@ -1377,7 +1377,7 @@ a:hover {
 .form-row__select:focus,
 .form-row__textarea:focus {
   outline: 0;
-  border-color: var(--ink);
+  border-color: var(--text-heading);
 }
 
 .form-row__radio-group {
@@ -1396,12 +1396,12 @@ a:hover {
 
 .form-privacy {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
   margin: 14px 0 18px;
 }
 
 .form-privacy__link {
-  color: var(--ink);
+  color: var(--text-heading);
   text-decoration: underline;
 }
 
@@ -1442,8 +1442,8 @@ a:hover {
 }
 
 .legal-table {
-  background: var(--paper-light);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   margin-bottom: 32px;
 }
 
@@ -1455,12 +1455,12 @@ a:hover {
 .legal-table__term,
 .legal-table__desc {
   padding: 14px 22px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
   font-size: 14px;
 }
 
 .legal-table__term {
-  background: var(--shu);
+  background: var(--primary);
   color: #fff;
   font-weight: 500;
 }
@@ -1471,20 +1471,20 @@ a:hover {
 }
 
 .legal-section__subtitle {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 20px;
-  color: var(--ink);
+  color: var(--text-heading);
   margin: 24px 0 12px;
   letter-spacing: 0.05em;
   padding-left: 14px;
-  border-left: 4px solid var(--gold);
+  border-left: 4px solid var(--secondary);
 }
 
 .legal-section__text,
 .legal-section__list {
   font-size: 14px;
   line-height: 1.9;
-  color: var(--sumi);
+  color: var(--text-base);
   margin-bottom: 12px;
 }
 
@@ -1500,9 +1500,9 @@ a:hover {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  background: var(--shu);
+  background: var(--primary);
   color: #fff;
-  border: 1px solid var(--shu-deep);
+  border: 1px solid var(--primary-dark);
   padding: 14px 22px;
   font-family: inherit;
   font-size: 13.5px;
@@ -1515,7 +1515,7 @@ a:hover {
 }
 
 .chat-toggle:hover {
-  background: var(--shu-deep);
+  background: var(--primary-dark);
   transform: translateY(-2px);
 }
 
@@ -1526,8 +1526,8 @@ a:hover {
   right: 24px;
   width: 340px;
   max-width: calc(100vw - 32px);
-  background: var(--paper-light);
-  border: 1px solid var(--ink);
+  background: var(--bg-card);
+  border: 1px solid var(--text-heading);
   z-index: 201;
   font-size: 13px;
   box-shadow: 0 12px 40px rgba(26, 41, 64, 0.25);
@@ -1538,7 +1538,7 @@ a:hover {
 }
 
 .chatbot__header {
-  background: var(--shu);
+  background: var(--primary);
   color: #f7c600;
   padding: 12px 16px;
   display: flex;
@@ -1547,7 +1547,7 @@ a:hover {
 }
 
 .chatbot__header strong {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 14px;
   letter-spacing: 0.08em;
 }
@@ -1570,7 +1570,7 @@ a:hover {
 .chatbot__body p {
   margin-bottom: 12px;
   line-height: 1.7;
-  color: var(--sumi);
+  color: var(--text-base);
 }
 
 .chatbot__opts {
@@ -1582,26 +1582,26 @@ a:hover {
 .chatbot__opts button {
   text-align: left;
   background: #fff;
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   padding: 10px 12px;
   cursor: pointer;
   font-family: inherit;
   font-size: 13px;
-  color: var(--ink);
+  color: var(--text-heading);
   transition: all 0.15s;
 }
 
 .chatbot__opts button:hover {
-  background: var(--ink);
-  color: var(--gold-light);
-  border-color: var(--ink);
+  background: var(--text-heading);
+  color: var(--secondary-bright);
+  border-color: var(--text-heading);
 }
 
 .chatbot__back {
   font-size: 12px;
   margin-top: 12px;
   display: inline-block;
-  color: var(--muted);
+  color: var(--text-muted);
   text-decoration: underline;
   cursor: pointer;
 }
@@ -1611,7 +1611,7 @@ a:hover {
   color: #a8a08e;
   padding: 48px 0 0;
   margin-top: 48px;
-  border-top: 4px solid var(--gold-light);
+  border-top: 4px solid var(--secondary-bright);
   font-size: 13px;
 }
 
@@ -1627,7 +1627,7 @@ a:hover {
 }
 
 .site-footer .logo__name {
-  color: var(--paper-light);
+  color: var(--bg-card);
 }
 
 .site-footer .logo__sub {
@@ -1650,9 +1650,9 @@ a:hover {
 }
 
 .footer__nav-heading {
-  font-family: var(--serif);
+  font-family: var(--font-serif);
   font-size: 14px;
-  color: var(--gold-light);
+  color: var(--secondary-bright);
   margin-bottom: 14px;
   letter-spacing: 0.1em;
   font-weight: 600;
@@ -1673,7 +1673,7 @@ a:hover {
 }
 
 .footer__nav-link:hover {
-  color: var(--gold-light);
+  color: var(--secondary-bright);
 }
 
 .footer__copy {
@@ -1706,7 +1706,7 @@ a:hover {
 
   .strength {
     border-right: 0;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--border);
   }
 
   .strength:last-child {
@@ -1723,7 +1723,7 @@ a:hover {
 
   .service:nth-child(n) {
     border-right: 0;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--border);
   }
 
   .service:last-child {
