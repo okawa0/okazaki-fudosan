@@ -1,7 +1,7 @@
 const PROPERTIES = [{
         type: "戸建て",
-        title: "大西町南ケ原 中古戸建て 4DK",
-        addr: "岡崎市大西町字南ケ原",
+        title: "中央町ひかり台 中古戸建て 4DK",
+        addr: "サンプル市中央町ひかり台",
         price: 1320,
         layout: "4DK",
         area: "建物98㎡／土地180㎡",
@@ -9,8 +9,8 @@ const PROPERTIES = [{
       },
       {
         type: "戸建て",
-        title: "大西町南ケ原 中古戸建て 2LDK",
-        addr: "岡崎市大西町字南ケ原",
+        title: "中央町ひかり台 中古戸建て 2LDK",
+        addr: "サンプル市中央町ひかり台",
         price: 2950,
         layout: "2LDK",
         area: "建物85㎡／土地150㎡",
@@ -18,8 +18,8 @@ const PROPERTIES = [{
       },
       {
         type: "土地",
-        title: "大西町奥長入 売土地",
-        addr: "岡崎市大西町字奥長入",
+        title: "中央町さくら台 売土地",
+        addr: "サンプル市中央町さくら台",
         price: 1300,
         layout: "-",
         area: "土地220㎡",
@@ -27,8 +27,8 @@ const PROPERTIES = [{
       },
       {
         type: "土地",
-        title: "大西町揚枝 売土地",
-        addr: "岡崎市大西町字揚枝",
+        title: "中央町みどり台 売土地",
+        addr: "サンプル市中央町みどり台",
         price: 1780,
         layout: "-",
         area: "土地280㎡",
@@ -36,8 +36,8 @@ const PROPERTIES = [{
       },
       {
         type: "土地",
-        title: "大西町南ケ原 売土地（広め）",
-        addr: "岡崎市大西町字南ケ原",
+        title: "中央町ひかり台 売土地（広め）",
+        addr: "サンプル市中央町ひかり台",
         price: 4000,
         layout: "-",
         area: "土地512.39㎡",
@@ -45,8 +45,8 @@ const PROPERTIES = [{
       },
       {
         type: "戸建て",
-        title: "田口町 中古戸建て 3LDK",
-        addr: "岡崎市田口町",
+        title: "緑町 中古戸建て 3LDK",
+        addr: "サンプル市緑町",
         price: 1980,
         layout: "3LDK",
         area: "建物92㎡／土地165㎡",
@@ -54,8 +54,8 @@ const PROPERTIES = [{
       },
       {
         type: "賃貸",
-        title: "大西町 賃貸アパート 2DK",
-        addr: "岡崎市大西町",
+        title: "中央町 賃貸アパート 2DK",
+        addr: "サンプル市中央町",
         price: 6.8,
         layout: "2DK",
         area: "45㎡",
@@ -64,8 +64,8 @@ const PROPERTIES = [{
       },
       {
         type: "賃貸",
-        title: "岡崎市内 貸事務所",
-        addr: "岡崎市内",
+        title: "サンプル市内 貸事務所",
+        addr: "サンプル市内",
         price: 18,
         layout: "事務所",
         area: "80㎡",
@@ -74,8 +74,8 @@ const PROPERTIES = [{
       },
       {
         type: "賃貸",
-        title: "大西町 月極駐車場",
-        addr: "岡崎市大西町",
+        title: "中央町 月極駐車場",
+        addr: "サンプル市中央町",
         price: 0.8,
         layout: "駐車場",
         area: "1台分",
@@ -84,8 +84,8 @@ const PROPERTIES = [{
       },
       {
         type: "戸建て",
-        title: "岡崎市北部 新築戸建て 4LDK",
-        addr: "岡崎市北部",
+        title: "サンプル市北部 新築戸建て 4LDK",
+        addr: "サンプル市北部",
         price: 3680,
         layout: "4LDK",
         area: "建物105㎡／土地180㎡",
@@ -122,7 +122,7 @@ const PROPERTIES = [{
         <div class="property__spec-item">築年<strong class="property__spec-value">${p.year}</strong></div>
       </div>
       <div class="property__actions">
-        <a href="tel:0564461655" class="property__action-link property__tel-btn">電話する</a>
+        <a href="tel:0000000000" class="property__action-link property__tel-btn">電話する</a>
         <a href="#" class="property__action-link property__mail-btn" onclick="navTo('contact');return false">メール</a>
       </div>
     </div>
@@ -192,7 +192,7 @@ const PROPERTIES = [{
       e.preventDefault();
       const r = document.getElementById("submit-result");
       r.classList.add("submit-result--show");
-      r.textContent = "✓ お問い合わせを受け付けました。2営業日以内にご返信いたします。お急ぎの場合は 0564-46-1655 までお電話ください。";
+      r.textContent = "✓ お問い合わせを受け付けました。2営業日以内にご返信いたします。お急ぎの場合は 000-0000-0000 までお電話ください。";
       e.target.reset();
       r.scrollIntoView({
         behavior: "smooth",
@@ -271,13 +271,13 @@ const PROPERTIES = [{
           {
             label: "電話で相談する",
             action: () => {
-              location.href = "tel:0564461655";
+              location.href = "tel:0000000000";
             }
           },
         ]
       },
       info: {
-        msg: "営業時間：9:00〜18:00／定休日：水曜日（土日祝も予約で対応可）／所在地：愛知県岡崎市大西3-2-17／TEL：0564-46-1655",
+        msg: "営業時間：9:00〜18:00／定休日：水曜日（土日祝も予約で対応可）／所在地：サンプル県サンプル市中央1-2-3／TEL：000-0000-0000",
         opts: [{
             label: "会社概要を見る",
             action: () => {
@@ -288,7 +288,7 @@ const PROPERTIES = [{
           {
             label: "電話する",
             action: () => {
-              location.href = "tel:0564461655";
+              location.href = "tel:0000000000";
             }
           },
         ]
@@ -333,7 +333,7 @@ const PROPERTIES = [{
           {
             label: "電話する",
             action: () => {
-              location.href = "tel:0564461655";
+              location.href = "tel:0000000000";
             }
           },
         ]

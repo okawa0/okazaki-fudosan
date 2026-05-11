@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>岡崎不動産株式会社｜愛知県岡崎市の不動産売買・賃貸・土地活用</title>
-  <meta name="description" content="愛知県岡崎市大西の地域密着型不動産。不動産売買・賃貸仲介・物件管理・土地活用・建物解体・外壁塗装まで、岡崎の暮らしを一貫してサポートします。宅建免許 愛知県知事(9)第15304号。">
+  <title>サンプル不動産株式会社｜サンプル県サンプル市の不動産売買・賃貸・土地活用</title>
+  <meta name="description" content="サンプル県サンプル市中央の地域密着型不動産。不動産売買・賃貸仲介・物件管理・土地活用・建物解体・外壁塗装まで、サンプルの暮らしを一貫してサポートします。宅建免許 サンプル県知事(0)第00000号。">
   <meta name="robots" content="index,follow">
   <link rel="icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/favicon.ico'); ?>" type="image/ico">
   <?php wp_head(); ?>
@@ -18,7 +18,7 @@
       <div class="topbar__biz">営業時間 9:00–18:00　<strong class="topbar__biz-highlight">定休日</strong>　水曜日（土日祝もご予約で対応可）</div>
       <div class="topbar__tel">
         <span class="topbar__tel-label">お電話でのお問い合わせ</span>
-        <a href="tel:0564461655" class="topbar__tel-link">0564-46-1655</a>
+        <a href="tel:0000000000" class="topbar__tel-link">000-0000-0000</a>
       </div>
     </div>
   </div>
@@ -27,11 +27,11 @@
     <div class="wrap">
       <a href="#" class="logo" data-sec="home">
         <div class="logo__mark">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="岡崎不動産ロゴ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="サンプル不動産ロゴ">
         </div>
         <div class="logo__text">
-          <div class="logo__name">岡崎不動産</div>
-          <div class="logo__sub">OKAZAKI REAL ESTATE</div>
+          <div class="logo__name">サンプル不動産</div>
+          <div class="logo__sub">SAMPLE REAL ESTATE</div>
         </div>
       </a>
       <a href="#" class="cta-header" data-sec="contact">無料相談・査定</a>
@@ -58,18 +58,18 @@
       <div class="hero">
         <picture class="hero__bg">
           <source media="(max-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-sp.webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-pc.webp" alt="岡崎の風景" loading="eager" fetchpriority="high">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-pc.webp" alt="サンプルの風景" loading="eager" fetchpriority="high">
         </picture>
         <div class="wrap">
           <div>
-            <div class="hero__eyebrow">愛知県岡崎市・地域密着 三十余年</div>
+            <div class="hero__eyebrow">サンプル県サンプル市・地域密着 三十余年</div>
             <h2 class="hero__title">
-              岡崎の<span class="hero__accent">土地</span>と<span class="hero__accent">暮らし</span>を、<br>
+              サンプルの<span class="hero__accent">土地</span>と<span class="hero__accent">暮らし</span>を、<br>
               一貫してお任せください。
               <span class="hero__small">— 売買・賃貸・土地活用・解体まで —</span>
             </h2>
             <p class="hero__lead">
-              岡崎市大西を拠点に、地域の不動産取引をきめ細やかにサポート。売買仲介から賃貸管理、土地活用のご提案、建物解体・外壁塗装まで、ワンストップで対応する地域密着型不動産会社です。
+              サンプル市中央を拠点に、地域の不動産取引をきめ細やかにサポート。売買仲介から賃貸管理、土地活用のご提案、建物解体・外壁塗装まで、ワンストップで対応する地域密着型不動産会社です。
             </p>
             <div class="hero__actions">
               <a href="#" class="btn btn-primary" data-sec="contact">無料相談はこちら</a>
@@ -77,8 +77,8 @@
             </div>
             <div class="hero__meta">
               <div class="hero__meta-item">取扱物件数<strong class="hero__meta-value">120件超</strong></div>
-              <div class="hero__meta-item">免許番号<strong class="hero__meta-value">愛知県知事(9)</strong></div>
-              <div class="hero__meta-item">得意エリア<strong class="hero__meta-value">大西・田口町</strong></div>
+              <div class="hero__meta-item">免許番号<strong class="hero__meta-value">サンプル県知事(0)</strong></div>
+              <div class="hero__meta-item">得意エリア<strong class="hero__meta-value">中央・緑町</strong></div>
             </div>
           </div>
           <div class="hero__search">
@@ -100,7 +100,7 @@
               <option value="99999">5,000万円超</option>
             </select>
             <label class="hero__search-label">キーワード（地名など）</label>
-            <input type="text" id="hero-key" class="hero__search-input" placeholder="例：大西町">
+            <input type="text" id="hero-key" class="hero__search-input" placeholder="例：中央町">
             <button class="hero__search-btn" onclick="heroSearch()">この条件で物件を見る</button>
           </div>
         </div>
@@ -117,8 +117,8 @@
         <div class="strengths">
           <div class="strength">
             <div class="strength__num">壱</div>
-            <h3 class="strength__title">岡崎市北部に強い<br>地域密着の情報網</h3>
-            <p class="strength__text">大西町・田口町・北部エリアの物件と相場、周辺環境を熟知。地元での営業歴が長く、市場に出る前の物件情報もご紹介可能です。</p>
+            <h3 class="strength__title">サンプル市北部に強い<br>地域密着の情報網</h3>
+            <p class="strength__text">中央町・緑町・北部エリアの物件と相場、周辺環境を熟知。地元での営業歴が長く、市場に出る前の物件情報もご紹介可能です。</p>
           </div>
           <div class="strength">
             <div class="strength__num">弐</div>
@@ -177,7 +177,7 @@
           </div>
           <div class="filter-bar__field">
             <label class="filter-bar__label">キーワード</label>
-            <input type="text" id="f-key" class="filter-bar__input" placeholder="例：大西町">
+            <input type="text" id="f-key" class="filter-bar__input" placeholder="例：中央町">
           </div>
           <button class="filter-bar__btn" onclick="filterProperties()">絞り込む</button>
         </div>
@@ -186,7 +186,7 @@
         <div class="property-grid" id="property-list"></div>
 
         <p style="font-size:12px;color:var(--muted);margin:16px 0">
-          ※ 掲載物件は一例です。最新情報は <a href="tel:0564461655" style="color:var(--shu);text-decoration:underline">0564-46-1655</a> までお問い合わせください。<br>
+          ※ 掲載物件は一例です。最新情報は <a href="tel:0000000000" style="color:var(--shu);text-decoration:underline">000-0000-0000</a> までお問い合わせください。<br>
           ※ 価格は税込表示。仲介手数料は別途必要となります。
         </p>
       </div>
@@ -298,15 +298,15 @@
           <div class="company__info">
             <dl class="company__info-table">
               <dt class="company__info-term">商号</dt>
-              <dd class="company__info-desc">岡崎不動産株式会社</dd>
+              <dd class="company__info-desc">サンプル不動産株式会社</dd>
               <dt class="company__info-term">所在地</dt>
-              <dd class="company__info-desc">〒444-0871<br>愛知県岡崎市大西3丁目2番地17</dd>
+              <dd class="company__info-desc">〒000-0000<br>サンプル県サンプル市中央1丁目2番地3</dd>
               <dt class="company__info-term">代表者</dt>
-              <dd class="company__info-desc">代表取締役　小林 和夫<br>取締役社長　小林 八重子<br>役員　倉木 寛子</dd>
+              <dd class="company__info-desc">代表取締役　サンプル 太郎<br>取締役社長　サンプル 花子<br>役員　サンプル 一郎</dd>
               <dt class="company__info-term">電話番号</dt>
-              <dd class="company__info-desc"><a href="tel:0564461655" style="color:var(--shu);text-decoration:underline">0564-46-1655</a></dd>
+              <dd class="company__info-desc"><a href="tel:0000000000" style="color:var(--shu);text-decoration:underline">000-0000-0000</a></dd>
               <dt class="company__info-term">FAX</dt>
-              <dd class="company__info-desc">0564-23-0017</dd>
+              <dd class="company__info-desc">000-0000-0001</dd>
               <dt class="company__info-term">営業時間</dt>
               <dd class="company__info-desc">9:00 – 18:00</dd>
               <dt class="company__info-term">定休日</dt>
@@ -314,30 +314,30 @@
               <dt class="company__info-term">事業内容</dt>
               <dd class="company__info-desc">不動産売買・賃貸仲介・物件管理／土地活用提案／建物解体・外壁塗装／福祉・医療施設用地仲介</dd>
               <dt class="company__info-term">免許番号</dt>
-              <dd class="company__info-desc">宅地建物取引業<br>愛知県知事 (9) 第15304号</dd>
+              <dd class="company__info-desc">宅地建物取引業<br>サンプル県知事 (0) 第00000号</dd>
               <dt class="company__info-term">所属団体</dt>
-              <dd class="company__info-desc">(公社)愛知県宅地建物取引業協会 西三河支部</dd>
+              <dd class="company__info-desc">(公社)サンプル県宅地建物取引業協会 サンプル支部</dd>
               <dt class="company__info-term">取扱エリア</dt>
-              <dd class="company__info-desc">愛知県岡崎市全域<br>（特に大西町・田口町・北部エリア）</dd>
+              <dd class="company__info-desc">サンプル県サンプル市全域<br>（特に中央町・緑町・北部エリア）</dd>
               <dt class="company__info-term">グループ会社</dt>
-              <dd class="company__info-desc">株式会社まごころ<br>有限会社カズオフーズ<br>MKKサービス</dd>
+              <dd class="company__info-desc">サンプル関連会社A<br>サンプル関連会社B<br>サンプル関連会社C</dd>
               <dt class="company__info-term">建設業許可</dt>
-              <dd class="company__info-desc">愛知県知事 許可（8）第15304号</dd>
+              <dd class="company__info-desc">サンプル県知事 許可（0）第00000号</dd>
             </dl>
           </div>
           <div class="company__side">
             <div class="company__card">
               <h4 class="company__card-title">代表ごあいさつ</h4>
-              <p class="company__card-text">当社は岡崎の地で長年にわたり、皆さまの「住まい」と「土地」のご相談をお受けしてまいりました。地域に根を下ろすからこそ見える物件の良さ、相場の機微、そして暮らしの文脈。一件一件のご縁を大切に、これからも誠実に向き合ってまいります。</p>
-              <p style="margin-top:14px;text-align:right;font-family:var(--serif);font-size:15px;color:var(--gold-light)">代表取締役　小林 和夫</p>
+              <p class="company__card-text">当社はサンプルの地で長年にわたり、皆さまの「住まい」と「土地」のご相談をお受けしてまいりました。地域に根を下ろすからこそ見える物件の良さ、相場の機微、そして暮らしの文脈。一件一件のご縁を大切に、これからも誠実に向き合ってまいります。</p>
+              <p style="margin-top:14px;text-align:right;font-family:var(--serif);font-size:15px;color:var(--gold-light)">代表取締役　サンプル 太郎</p>
             </div>
             <div class="company__map-card">
-              <div class="company__map-placeholder">岡崎市大西 — Google Maps</div>
+              <div class="company__map-placeholder">サンプル市中央 — Google Maps</div>
               <div class="company__map-text">
                 <strong class="company__map-label">最寄駅</strong><br>
-                名鉄「東岡崎駅」より車で約15分／JR「岡崎駅」より車で約20分<br>
+                名鉄「サンプル中央駅」より車で約15分／JR「サンプル駅」より車で約20分<br>
                 <strong style="display:inline-block;margin-top:8px">駐車場</strong> 来客用スペースあり<br>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E5%A4%A7%E8%A5%BF3-2-17" target="_blank" rel="noopener" style="color:var(--shu);text-decoration:underline;display:inline-block;margin-top:8px;font-size:12px">→ Googleマップで見る</a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=sample-city" target="_blank" rel="noopener" style="color:var(--shu);text-decoration:underline;display:inline-block;margin-top:8px;font-size:12px">→ Googleマップで見る</a>
               </div>
             </div>
           </div>
@@ -355,20 +355,20 @@
 
         <div class="staff-grid">
           <div class="staff-card">
-            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/ceo.webp'); ?>" alt="小林 和夫">
-            <div class="staff-card__name">小林 和夫</div>
+            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/ceo.webp'); ?>" alt="サンプル 太郎">
+            <div class="staff-card__name">サンプル 太郎</div>
             <div class="staff-card__role">代表取締役</div>
-            <p class="staff-card__text">創業以来、岡崎市の不動産取引に携わってまいりました。土地活用と相続対策が得意分野です。</p>
+            <p class="staff-card__text">創業以来、サンプル市の不動産取引に携わってまいりました。土地活用と相続対策が得意分野です。</p>
           </div>
           <div class="staff-card">
-            <div class="staff-card__avatar">八</div>
-            <div class="staff-card__name">小林 八重子</div>
+            <div class="staff-card__avatar">花</div>
+            <div class="staff-card__name">サンプル 花子</div>
             <div class="staff-card__role">取締役社長</div>
             <p class="staff-card__text">会社の経営を支え、お客様が安心してご相談いただける環境づくりに尽力しております。</p>
           </div>
           <div class="staff-card">
-            <div class="staff-card__avatar">倉</div>
-            <div class="staff-card__name">倉木 寛子</div>
+            <div class="staff-card__avatar">一</div>
+            <div class="staff-card__name">サンプル 一郎</div>
             <div class="staff-card__role">役員 / 専任宅地建物取引士</div>
             <p class="staff-card__text">賃貸物件のご紹介、契約手続き、入居後のサポートまで担当。お気軽にご相談ください。</p>
           </div>
@@ -393,7 +393,7 @@
         <div class="review-grid">
           <div class="review">
             <p class="review__text">相続した実家の売却で相談しました。古家付きだったため解体も含めて一括で対応してもらえ、別々の業者を探す手間が省けました。査定額も近隣相場と乖離がなく、納得して任せられました。</p>
-            <div class="review__who"><strong class="review__who-name">岡崎市内 60代男性</strong>　戸建て売却・解体</div>
+            <div class="review__who"><strong class="review__who-name">サンプル市内 60代男性</strong>　戸建て売却・解体</div>
           </div>
           <div class="review">
             <p class="review__text">グループホーム用地を探していて、用途地域や周辺環境まで丁寧に調査してくれました。建築会社との連携もスムーズで、計画通りに開設できました。</p>
@@ -401,11 +401,11 @@
           </div>
           <div class="review">
             <p class="review__text">初めての一人暮らしで賃貸を契約。希望条件が細かかったのですが、何件も内見に付き合ってくださり、納得のいく物件に決まりました。</p>
-            <div class="review__who"><strong class="review__who-name">岡崎市内 20代女性</strong>　賃貸契約</div>
+            <div class="review__who"><strong class="review__who-name">サンプル市内 20代女性</strong>　賃貸契約</div>
           </div>
           <div class="review">
             <p class="review__text">親から相続した土地の活用方法を相談。駐車場経営と売却の両方の試算を出してもらえて、家族でじっくり判断できました。押しつけがましさが無く、相談しやすかったです。</p>
-            <div class="review__who"><strong class="review__who-name">岡崎市内 50代女性</strong>　土地活用相談</div>
+            <div class="review__who"><strong class="review__who-name">サンプル市内 50代女性</strong>　土地活用相談</div>
           </div>
         </div>
 
@@ -435,8 +435,8 @@
             <div class="faq-item__answer">宅建業法で定められた上限額を頂戴しています。売買価格400万円超の場合、（売買価格×3%＋6万円）＋消費税が上限となります。賃貸の場合は賃料1ヶ月分（＋消費税）が上限です。</div>
           </div>
           <div class="faq-item">
-            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>遠方に住んでいますが、岡崎の物件を売却できますか？</span><span class="faq-item__arrow">▼</span></div>
-            <div class="faq-item__answer">もちろん可能です。書類のやり取りは郵送・電子契約に対応しております。決済時のみご来岡いただくか、司法書士への委任で対応できます。</div>
+            <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>遠方に住んでいますが、サンプルの物件を売却できますか？</span><span class="faq-item__arrow">▼</span></div>
+            <div class="faq-item__answer">もちろん可能です。書類のやり取りは郵送・電子契約に対応しております。決済時のみご来店いただくか、司法書士への委任で対応できます。</div>
           </div>
           <div class="faq-item">
             <div class="faq-item__question" onclick="toggleFaq(this)"><span class="faq-item__qmark">Q.</span><span>古家付きの土地を売りたいのですが、解体してから売るべきですか？</span><span class="faq-item__arrow">▼</span></div>
@@ -472,7 +472,7 @@
             <p style="font-size:13.5px;color:#333;line-height:1.85">物件のお問い合わせ・査定のご依頼・ご来店のご予約など、お気軽にどうぞ。</p>
             <div class="contact__big-tel">
               <span class="contact__tel-label">TEL</span>
-              <a href="tel:0564461655" class="contact__tel-link"><strong class="contact__tel-number">0564-46-1655</strong></a>
+              <a href="tel:0000000000" class="contact__tel-link"><strong class="contact__tel-number">000-0000-0000</strong></a>
             </div>
             <div class="contact__hours">
               <strong class="contact__hours-label">受付時間</strong>　9:00 – 18:00<br>
@@ -501,11 +501,11 @@
               </div>
               <div class="form-row">
                 <label class="form-row__label">お名前<span class="form-row__req">*</span></label>
-                <input type="text" name="name" class="form-row__input" required placeholder="例：岡崎 太郎">
+                <input type="text" name="name" class="form-row__input" required placeholder="例：サンプル 太郎">
               </div>
               <div class="form-row">
                 <label class="form-row__label">電話番号<span class="form-row__req">*</span></label>
-                <input type="tel" name="tel" class="form-row__input" required placeholder="例：090-1234-5678">
+                <input type="tel" name="tel" class="form-row__input" required placeholder="例：000-0000-0000">
               </div>
               <div class="form-row">
                 <label class="form-row__label">メールアドレス</label>
@@ -547,17 +547,17 @@
           <div class="legal-table">
             <dl class="legal-table__table">
               <dt class="legal-table__term">事業者名</dt>
-              <dd class="legal-table__desc">岡崎不動産株式会社</dd>
+              <dd class="legal-table__desc">サンプル不動産株式会社</dd>
               <dt class="legal-table__term">代表者</dt>
-              <dd class="legal-table__desc">代表取締役 小林 和夫</dd>
+              <dd class="legal-table__desc">代表取締役 サンプル 太郎</dd>
               <dt class="legal-table__term">所在地</dt>
-              <dd class="legal-table__desc">〒444-0871 愛知県岡崎市大西3丁目2番地17</dd>
+              <dd class="legal-table__desc">〒000-0000 サンプル県サンプル市中央1丁目2番地3</dd>
               <dt class="legal-table__term">電話番号</dt>
-              <dd class="legal-table__desc">0564-46-1655（受付時間 9:00–18:00／水曜定休）</dd>
+              <dd class="legal-table__desc">000-0000-0000（受付時間 9:00–18:00／水曜定休）</dd>
               <dt class="legal-table__term">免許番号</dt>
-              <dd class="legal-table__desc">宅地建物取引業 愛知県知事(9)第15304号</dd>
+              <dd class="legal-table__desc">宅地建物取引業 サンプル県知事(0)第00000号</dd>
               <dt class="legal-table__term">所属団体</dt>
-              <dd class="legal-table__desc">(公社)愛知県宅地建物取引業協会 西三河支部</dd>
+              <dd class="legal-table__desc">(公社)サンプル県宅地建物取引業協会 サンプル支部</dd>
               <dt class="legal-table__term">仲介手数料</dt>
               <dd class="legal-table__desc">宅建業法で定められた上限額の範囲内（売買：価格400万円超で価格×3%＋6万円＋消費税が上限／賃貸：賃料1ヶ月分＋消費税が上限）</dd>
               <dt class="legal-table__term">支払方法</dt>
@@ -568,13 +568,13 @@
           </div>
 
           <h3 class="legal-section__subtitle">プライバシーポリシー</h3>
-          <p class="legal-section__text">岡崎不動産株式会社（以下「当社」）は、個人情報保護法等の関連法令を遵守し、お客様の個人情報を以下の方針で取り扱います。</p>
+          <p class="legal-section__text">サンプル不動産株式会社（以下「当社」）は、個人情報保護法等の関連法令を遵守し、お客様の個人情報を以下の方針で取り扱います。</p>
           <ol class="legal-section__list">
             <li class="legal-section__list-item"><strong>取得・利用目的</strong>：物件のご紹介・契約手続き・アフターサービス・お問い合わせ対応のために必要な範囲で利用します。</li>
             <li class="legal-section__list-item"><strong>第三者提供</strong>：法令に基づく場合または契約履行に必要な場合（金融機関・司法書士等）を除き、第三者に提供しません。</li>
             <li class="legal-section__list-item"><strong>安全管理</strong>：個人情報への不正アクセス・紛失・改ざん等を防止するため、必要かつ適切な安全管理措置を講じます。</li>
             <li class="legal-section__list-item"><strong>開示・訂正・削除</strong>：ご本人からの請求があった場合、合理的な範囲で速やかに対応します。</li>
-            <li class="legal-section__list-item"><strong>お問い合わせ窓口</strong>：個人情報に関するお問い合わせは 0564-46-1655 までご連絡ください。</li>
+            <li class="legal-section__list-item"><strong>お問い合わせ窓口</strong>：個人情報に関するお問い合わせは 000-0000-0000 までご連絡ください。</li>
           </ol>
 
           <h3 class="legal-section__subtitle">免責事項</h3>
@@ -601,18 +601,18 @@
         <div class="footer__brand">
           <a href="#" class="logo" data-sec="home">
             <div class="logo__mark">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="岡崎不動産ロゴ">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="サンプル不動産ロゴ">
             </div>
             <div class="logo__text">
-              <div class="logo__name">岡崎不動産</div>
-              <div class="logo__sub">OKAZAKI REAL ESTATE</div>
+              <div class="logo__name">サンプル不動産</div>
+              <div class="logo__sub">SAMPLE REAL ESTATE</div>
             </div>
           </a>
-          <p class="footer__brand-text">〒444-0871<br>愛知県岡崎市大西3丁目2番地17<br>TEL: 0564-46-1655<br>FAX: 0564-23-0017</p>
+          <p class="footer__brand-text">〒000-0000<br>サンプル県サンプル市中央1丁目2番地3<br>TEL: 000-0000-0000<br>FAX: 000-0000-0001</p>
           <p class="footer__brand-text" style="margin-top:6px">営業時間 9:00–18:00／水曜定休</p>
           <div class="footer__license">
             宅地建物取引業<br>
-            愛知県知事 (9) 第15304号
+            サンプル県知事 (0) 第00000号
           </div>
         </div>
         <div class="footer__nav">
@@ -645,7 +645,7 @@
           </ul>
         </div>
       </div>
-      <div class="footer__copy">© 岡崎不動産株式会社 All Rights Reserved.</div>
+      <div class="footer__copy">© サンプル不動産株式会社 All Rights Reserved.</div>
     </div>
   </footer>
 
