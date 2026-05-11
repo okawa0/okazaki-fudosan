@@ -61,7 +61,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-pc.webp" alt="サンプルの風景" loading="eager" fetchpriority="high">
         </picture>
         <div class="wrap">
-          <div>
+          <div class="hero__content">
             <div class="hero__eyebrow">サンプル県サンプル市・地域密着 三十余年</div>
             <h2 class="hero__title">
               サンプルの<span class="hero__accent">土地</span>と<span class="hero__accent">暮らし</span>を、<br>
