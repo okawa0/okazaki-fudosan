@@ -8,11 +8,11 @@
   <meta name="description" content="愛知県岡崎市大西の地域密着型不動産。不動産売買・賃貸仲介・物件管理・土地活用・建物解体・外壁塗装まで、岡崎の暮らしを一貫してサポートします。宅建免許 愛知県知事(9)第15304号。">
   <meta name="robots" content="index,follow">
   <link rel="icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/favicon.ico'); ?>" type="image/ico">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js" defer></script>
+  <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <div class="topbar">
     <div class="wrap">
       <div class="topbar__biz">営業時間 9:00–18:00　<strong class="topbar__biz-highlight">定休日</strong>　水曜日（土日祝もご予約で対応可）</div>
@@ -649,6 +649,7 @@
     </div>
   </footer>
 
+  <?php wp_footer(); ?>
 </body>
 
 </html>
