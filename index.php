@@ -358,7 +358,7 @@
 
         <div class="staff-grid">
           <div class="staff-card">
-            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/kobayashi-ceo.webp'); ?>" alt="小林 和夫">
+            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/ceo.webp'); ?>" alt="小林 和夫">
             <div class="staff-card__name">小林 和夫</div>
             <div class="staff-card__role">代表取締役</div>
             <p class="staff-card__text">創業以来、岡崎市の不動産取引に携わってまいりました。土地活用と相続対策が得意分野です。</p>

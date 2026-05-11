@@ -11,5 +11,8 @@ dist/
 # Editor(個人設定)
 .vscode/
 
+# Sass(コンパイルキャッシュ)
+.sass-cache/
+
 # Logs(一時ファイル)
 *.log
