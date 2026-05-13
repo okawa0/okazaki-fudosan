@@ -284,7 +284,7 @@
     position: relative;
     z-index: 2;
 
-    @media (min-width: $bp-md) {
+    @media (min-width: 1025px) {
       grid-template-columns: 1.4fr 1fr;
       gap: 48px;
       padding: 64px 24px;
@@ -304,7 +304,7 @@
     box-shadow: 0 12px 32px rgba(26, 21, 16, 0.08);
     backdrop-filter: blur(2px);
 
-    @media (min-width: $bp-md) {
+    @media (min-width: 1025px) {
       padding: 34px 36px;
       max-width: 690px;
     }
